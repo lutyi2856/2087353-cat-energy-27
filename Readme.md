@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Сергей Сычёв](https://up.htmlacademy.ru/adaptive/27/user/2087353).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Бервяченок](https://htmlacademy.ru/profile/jackson).
 
 ---
 
