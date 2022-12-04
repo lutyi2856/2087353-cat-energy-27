@@ -9,304 +9,325 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__logo-wrapper">
-      <a href="#" class="main-header__logo-link">
-        <img class="main-header__logo-image" src="img/logo-cat.svg" width="33" height="37" alt="Значек кота.">
-      </a>
-      <a href="" class="main-header__logo-title-link">
-        <img class="main-header__logo-image-title" src="img/logo-title.svg" width="101" height="18" alt="Кэт энерджи.">
-      </a>
-    </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle">
-        <span class="visually-hidden">Открывает меню.</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="index.html">главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">подбор программы</a>
-          </li>
-        </ul>
+    <div class="main-header__container">
+      <div class="main-header__logo-wrapper">
+        <a href="#" class="main-header__logo-link">
+          <img class="main-header__logo-image" src="img/logo-cat.svg" width="33" height="37" alt="Значек кота.">
+        </a>
+        <a href="" class="main-header__logo-title-link">
+          <img class="main-header__logo-image-title" src="img/logo-title.svg" width="101" height="18"
+            alt="Кэт энерджи.">
+        </a>
       </div>
-    </nav>
+      <nav class="main-header__main-nav main-nav">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открывает меню.</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="index.html">главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="catalog-container">
     <section class="shop">
-      <h1 class="shop__title">
-        Каталог продукции
-      </h1>
+      <div class="shop__wrapper">
+        <h1 class="shop__title">
+          Каталог продукции
+        </h1>
+      </div>
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">
-        Каталог продукции.
+        Каталог.
       </h2>
       <div class="catalog__wrapper">
         <ul class="catalog__list product-list">
           <li class="product-list__item">
-            <img class="product-list__image" src="img/cat-energy-pro-500.png" alt="Продукт.">
-            <h3 class="product-list__title">
-              Cat Energy PRO 500 г
-            </h3>
-            <dl class="product-list__feature">
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Масса
-                </dt>
-                <dd class="product-list__value">
-                  500 г
-                </dd>
-              </div>
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Вкус
-                </dt>
-                <dd class="product-list__value">
-                  Курица
-                </dd>
-              </div>
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Цена
-                </dt>
-                <dd class="product-list__value">
-                  700 ₽
-                </dd>
-              </div>
-            </dl>
-            <a href="" class="product-list__link button">
-              заказать
-            </a>
+            <div class="product-list__item-wrapper">
+              <img class="product-list__image" src="img/cat-energy-pro-500.png" alt="Продукт.">
+              <h3 class="product-list__title">
+                Cat Energy PRO 500 г
+              </h3>
+              <dl class="product-list__feature">
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Масса
+                  </dt>
+                  <dd class="product-list__value">
+                    500 г
+                  </dd>
+                </div>
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Вкус
+                  </dt>
+                  <dd class="product-list__value">
+                    Курица
+                  </dd>
+                </div>
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Цена
+                  </dt>
+                  <dd class="product-list__value">
+                    700 ₽
+                  </dd>
+                </div>
+              </dl>
+              <a href="" class="product-list__link button">
+                заказать
+              </a>
+            </div>
           </li>
           <li class="product-list__item">
-            <img class="product-list__image product-list__image--large" src="img/cat-energy-pro-1000.png"
-              alt="Продукт.">
-            <h3 class="product-list__title">
-              Cat Energy PRO 1000 г
-            </h3>
-            <dl class="product-list__feature">
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Масса
-                </dt>
-                <dd class="product-list__value">
-                  1000 г
-                </dd>
-              </div>
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Вкус
-                </dt>
-                <dd class="product-list__value">
-                  Курица
-                </dd>
-              </div>
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Цена
-                </dt>
-                <dd class="product-list__value">
-                  1000 ₽
-                </dd>
-              </div>
-            </dl>
-            <a href="" class="product-list__link button">
-              заказать
-            </a>
+            <div class="product-list__item-wrapper">
+              <img class="product-list__image product-list__image--large" src="img/cat-energy-pro-1000.png"
+                alt="Продукт.">
+              <h3 class="product-list__title">
+                Cat Energy PRO 1000 г
+              </h3>
+              <dl class="product-list__feature">
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Масса
+                  </dt>
+                  <dd class="product-list__value">
+                    1000 г
+                  </dd>
+                </div>
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Вкус
+                  </dt>
+                  <dd class="product-list__value">
+                    Курица
+                  </dd>
+                </div>
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Цена
+                  </dt>
+                  <dd class="product-list__value">
+                    1000 ₽
+                  </dd>
+                </div>
+              </dl>
+              <a href="" class="product-list__link button">
+                заказать
+              </a>
+            </div>
           </li>
           <li class="product-list__item">
-            <img class="product-list__image" src="img/cat-energy-pro-500-green.png" alt="Продукт.">
-            <h3 class="product-list__title">
-              Cat Energy PRO 500 г
-            </h3>
-            <dl class="product-list__feature">
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Масса
-                </dt>
-                <dd class="product-list__value">
-                  500 г
-                </dd>
-              </div>
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Вкус
-                </dt>
-                <dd class="product-list__value">
-                  Рыба
-                </dd>
-              </div>
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Цена
-                </dt>
-                <dd class="product-list__value">
-                  700 ₽
-                </dd>
-              </div>
-            </dl>
-            <a href="" class="product-list__link button">
-              заказать
-            </a>
+            <div class="product-list__item-wrapper">
+              <img class="product-list__image" src="img/cat-energy-pro-500-green.png" alt="Продукт.">
+              <h3 class="product-list__title">
+                Cat Energy PRO 500 г
+              </h3>
+              <dl class="product-list__feature">
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Масса
+                  </dt>
+                  <dd class="product-list__value">
+                    500 г
+                  </dd>
+                </div>
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Вкус
+                  </dt>
+                  <dd class="product-list__value">
+                    Рыба
+                  </dd>
+                </div>
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Цена
+                  </dt>
+                  <dd class="product-list__value">
+                    700 ₽
+                  </dd>
+                </div>
+              </dl>
+              <a href="" class="product-list__link button">
+                заказать
+              </a>
+            </div>
           </li>
           <li class="product-list__item">
-            <img class="product-list__image product-list__image--large" src="img/cat-energy-pro-1000-green.png"
-              alt="Продукт.">
-            <h3 class="product-list__title">
-              Cat Energy PRO 1000 г
-            </h3>
-            <dl class="product-list__feature">
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Масса
-                </dt>
-                <dd class="product-list__value">
-                  1000 г
-                </dd>
-              </div>
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Вкус
-                </dt>
-                <dd class="product-list__value">
-                  Рыба
-                </dd>
-              </div>
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Цена
-                </dt>
-                <dd class="product-list__value">
-                  1000 ₽
-                </dd>
-              </div>
-            </dl>
-            <a href="" class="product-list__link button">
-              заказать
-            </a>
+            <div class="product-list__item-wrapper">
+              <img class="product-list__image product-list__image--large" src="img/cat-energy-pro-1000-green.png"
+                alt="Продукт.">
+              <h3 class="product-list__title">
+                Cat Energy PRO 1000 г
+              </h3>
+              <dl class="product-list__feature">
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Масса
+                  </dt>
+                  <dd class="product-list__value">
+                    1000 г
+                  </dd>
+                </div>
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Вкус
+                  </dt>
+                  <dd class="product-list__value">
+                    Рыба
+                  </dd>
+                </div>
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Цена
+                  </dt>
+                  <dd class="product-list__value">
+                    1000 ₽
+                  </dd>
+                </div>
+              </dl>
+              <a href="" class="product-list__link button">
+                заказать
+              </a>
+            </div>
           </li>
           <li class="product-list__item">
-            <img class="product-list__image" src="img/cat-energy-slim-pro-500.png" alt="Продукт.">
-            <h3 class="product-list__title">
-              Cat Energy slim 500 г
-            </h3>
-            <dl class="product-list__feature">
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Масса
-                </dt>
-                <dd class="product-list__value">
-                  500 г
-                </dd>
-              </div>
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Вкус
-                </dt>
-                <dd class="product-list__value">
-                  Гречка
-                </dd>
-              </div>
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Цена
-                </dt>
-                <dd class="product-list__value">
-                  400 ₽
-                </dd>
-              </div>
-            </dl>
-            <a href="" class="product-list__link button">
-              заказать
-            </a>
+            <div class="product-list__item-wrapper">
+              <img class="product-list__image" src="img/cat-energy-slim-pro-500.png" alt="Продукт.">
+              <h3 class="product-list__title">
+                Cat Energy slim 500 г
+              </h3>
+              <dl class="product-list__feature">
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Масса
+                  </dt>
+                  <dd class="product-list__value">
+                    500 г
+                  </dd>
+                </div>
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Вкус
+                  </dt>
+                  <dd class="product-list__value">
+                    Гречка
+                  </dd>
+                </div>
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Цена
+                  </dt>
+                  <dd class="product-list__value">
+                    400 ₽
+                  </dd>
+                </div>
+              </dl>
+              <a href="" class="product-list__link button">
+                заказать
+              </a>
+            </div>
           </li>
           <li class="product-list__item">
-            <img class="product-list__image product-list__image--large" src="img/cat-energy-slim-pro-1000.png"
-              alt="Продукт.">
-            <h3 class="product-list__title">
-              Cat Energy slim 1000 г
-            </h3>
-            <dl class="product-list__feature">
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Масса
-                </dt>
-                <dd class="product-list__value">
-                  1000 г
-                </dd>
-              </div>
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Вкус
-                </dt>
-                <dd class="product-list__value">
-                  Гречка
-                </dd>
-              </div>
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Цена
-                </dt>
-                <dd class="product-list__value">
-                  700 ₽
-                </dd>
-              </div>
-            </dl>
-            <a href="" class="product-list__link button">
-              заказать
-            </a>
+            <div class="product-list__item-wrapper">
+              <img class="product-list__image product-list__image--large" src="img/cat-energy-slim-pro-1000.png"
+                alt="Продукт.">
+              <h3 class="product-list__title">
+                Cat Energy slim 1000 г
+              </h3>
+              <dl class="product-list__feature">
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Масса
+                  </dt>
+                  <dd class="product-list__value">
+                    1000 г
+                  </dd>
+                </div>
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Вкус
+                  </dt>
+                  <dd class="product-list__value">
+                    Гречка
+                  </dd>
+                </div>
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Цена
+                  </dt>
+                  <dd class="product-list__value">
+                    700 ₽
+                  </dd>
+                </div>
+              </dl>
+              <a href="" class="product-list__link button">
+                заказать
+              </a>
+            </div>
           </li>
           <li class="product-list__item">
-            <img class="product-list__image" src="img/cat-energy-slim-pro-500-rice.png" alt="Продукт.">
-            <h3 class="product-list__title">
-              Cat Energy slim 500 г
-            </h3>
-            <dl class="product-list__feature">
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Масса
-                </dt>
-                <dd class="product-list__value">
-                  500 г
-                </dd>
-              </div>
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Вкус
-                </dt>
-                <dd class="product-list__value">
-                  Рис
-                </dd>
-              </div>
-              <div class="product-list__wrapper">
-                <dt class="product-list__mark">
-                  Цена
-                </dt>
-                <dd class="product-list__value">
-                  500 ₽
-                </dd>
-              </div>
-            </dl>
-            <a href="" class="product-list__link button">
-              заказать
-            </a>
+            <div class="product-list__item-wrapper">
+              <img class="product-list__image" src="img/cat-energy-slim-pro-500-rice.png" alt="Продукт.">
+              <h3 class="product-list__title">
+                Cat Energy slim 500 г
+              </h3>
+              <dl class="product-list__feature">
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Масса
+                  </dt>
+                  <dd class="product-list__value">
+                    500 г
+                  </dd>
+                </div>
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Вкус
+                  </dt>
+                  <dd class="product-list__value">
+                    Рис
+                  </dd>
+                </div>
+                <div class="product-list__wrapper">
+                  <dt class="product-list__mark">
+                    Цена
+                  </dt>
+                  <dd class="product-list__value">
+                    500 ₽
+                  </dd>
+                </div>
+              </dl>
+              <a href="" class="product-list__link button">
+                заказать
+              </a>
+            </div>
           </li>
           <li class="product-list__item more">
-            <img class="more__image" src="img/plus.png" alt="Продукт.">
-            <b class="more__title">
-              Показать еще 100500 товаров
-            </b>
-            <p class="more__description">
-              На самом деле вкусов гораздо больше!
-            </p>
-            <a href="" class="more__link button button--background">
-              показать все
-            </a>
+            <div class="product-list__item-wrapper">
+              <img class="more__image" src="img/plus.png" alt="Продукт.">
+              <b class="more__title">
+                Показать еще 100500 товаров
+              </b>
+              <p class="more__description">
+                На самом деле вкусов гораздо больше!
+              </p>
+              <a href="" class="more__link button button--background">
+                показать все
+              </a>
+            </div>
           </li>
         </ul>
       </div>
@@ -384,10 +405,12 @@
         </ul>
       </div>
       <article class="action">
-        <h2 class="visually-hidden">Акция.</h2>
-        <p class="action__description">
-          Закажите все и получите чехол для кота в подарок!
-        </p>
+        <div class="action-wrapper">
+          <h2 class="visually-hidden">Акция.</h2>
+          <p class="action__description">
+            Закажите все и получите чехол для кота в подарок!
+          </p>
+        </div>
       </article>
     </section>
     <section class="map">
