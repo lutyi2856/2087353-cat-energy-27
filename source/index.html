@@ -4,36 +4,40 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__logo-wrapper">
-      <a href="#" class="main-header__logo-link">
-        <img class="main-header__logo-image" src="img/logo-cat.svg" width="33" height="37" alt="Значек кота.">
-      </a>
-      <a href="" class="main-header__logo-title-link">
-        <img class="main-header__logo-image-title" src="img/logo-title.svg" width="101" height="18" alt="Кэт энерджи.">
-      </a>
-    </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle">
-        <span class="visually-hidden">Открывает меню.</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="index.html">главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">подбор программы</a>
-          </li>
-        </ul>
+    <div class="main-header__container">
+      <div class="main-header__logo-wrapper">
+        <a href="#" class="main-header__logo-link">
+          <img class="main-header__logo-image" src="img/logo-cat.svg" width="33" height="37" alt="Значек кота.">
+        </a>
+        <a href="" class="main-header__logo-title-link">
+          <img class="main-header__logo-image-title" src="img/logo-title.svg" width="101" height="18"
+            alt="Кэт энерджи.">
+        </a>
       </div>
-    </nav>
+      <nav class="main-header__main-nav main-nav">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открывает меню.</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="index.html">главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="main-container">
     <div class="hero-container">
@@ -111,7 +115,7 @@
     <section class="example">
       <div class="example__description-wrapper">
         <h2 class="example__title title-block">
-          Как это работает
+          Живой пример
         </h2>
         <p class="example__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
@@ -140,7 +144,6 @@
       <div class="example__slider slider">
         <img class="slider__slide" src="img/cat-slider.png" width="280" height="256" alt="Кот.">
       </div>
-
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта.</h2>
