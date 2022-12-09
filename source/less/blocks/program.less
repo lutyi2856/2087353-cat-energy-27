@@ -52,3 +52,21 @@
     }
   }
 }
+
+/* Для декстопа */
+@media (min-width: @desktop-width) {
+  .program__wrapper {
+    padding: 82px 30px 71px 30px;
+  }
+
+  .program__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+
+  .program__item {
+    margin: 0;
+    padding: 41px 61px 55px 52px;
+  }
+}

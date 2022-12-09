@@ -7,3 +7,24 @@
 .map--background {
   background-color: @gray;
 }
+
+/* Для декстопа */
+@media (min-width: @desktop-width) {
+  .map--relative {
+    position: relative;
+  }
+
+  .map__adress {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    width: 565px;
+    padding: 80px 56px;
+    z-index: 1;
+    background-color: @white;
+  }
+
+  .map__image {
+    height: 400px;
+  }
+}

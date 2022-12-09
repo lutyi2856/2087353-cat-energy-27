@@ -94,6 +94,29 @@
   .example {
     // background-color: linear-gradient 360deg, @white 300px, @background-gray 0;
     background: linear-gradient(540deg, @white 450px, @background-gray 0);
+  }
+}
 
+/* Для декстопа */
+@media (min-width: @desktop-width) {
+  .example {
+    // background-color: linear-gradient 360deg, @white 300px, @background-gray 0;
+    background: linear-gradient(540deg, @white 150px, @background-gray 0);
+  }
+
+  .example__description-wrapper {
+    padding: 0 30px 75px 30px;
+    display: grid;
+    grid-template-columns: 436px 560px;
+    grid-template-rows: 206px 317px;
+    column-gap: 224px;
+  }
+
+  .example__title {
+    grid-area: 1 / 1/ 2 / 2;
+  }
+
+  .example__wrapper-block {
+    grid-area: 2 / 1/ 3 / 2;
   }
 }

@@ -47,4 +47,45 @@
     object-fit: contain;
     order: 4;
   }
+
+  .hero-container__button {
+    margin-left: 76px;
+    order: 3;
+    z-index: 1;
+    width: 244px;
+  }
+}
+
+/* Для декстопа */
+@media (min-width: @desktop-width) {
+  .hero-container {
+    background: linear-gradient(450deg, #ffffff 50%, @green 50%), url("../../img/index-background-desktop.jpg");
+    background-position: center, top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .hero-container__center {
+    padding: 111px 30px 50px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-container__title {
+    padding: 0 606px 0 76px;
+
+  }
+
+  .hero-container__description {
+    margin: 40px 0 52px 0;
+    padding-left: 76px;
+  }
+
+  .hero-container__image {
+    width: 522px;
+    height: 499px;
+    margin-top: -380px;
+    margin-left: 474px;
+
+  }
 }
