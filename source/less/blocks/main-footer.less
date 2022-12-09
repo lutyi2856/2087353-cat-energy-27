@@ -1,19 +1,28 @@
 .main-footer {
-  background-color: #f2f2f2;
+  background-color: @gray;
 }
 
 .main-footer__wrapper {
-  width: 320px;
-  margin: 0 auto;
   padding: 39px 20px 22px 20px;
 }
 
+.main-footer__social-list {
+  .list-style();
+  display: flex;
+}
+
 .main-footer__htmlacademy {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #444444;
+  color: @dark-grey;
   text-decoration: none;
+}
+
+/* Для планшета */
+@media (min-width: @tablet-width)  {
+  .main-footer__wrapper {
+    padding: 58px 30px 55px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
 }

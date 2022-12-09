@@ -1,13 +1,12 @@
+/* Для мобильного */
 .hero-container {
-  background: linear-gradient(360deg, #ffffff 217px, #68B738 0);
-  background-image: url("../../img/cat-background-hero.jpg");
-  background-position: center;
+  background: linear-gradient(360deg, #ffffff 150px, @green 0), url("../../img/cat-background-hero.png");
+  background-position: center, top;
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .hero-container__center {
-  width: 320px;
-  margin: 0 auto;
   padding: 27px 20px 0 20px;
 }
 
@@ -18,4 +17,34 @@
 
 .hero-container__description {
   margin-top: 25px;
+}
+
+/* Для планшета */
+@media (min-width: @tablet-width) {
+  .hero-container {
+    background: linear-gradient(360deg, #ffffff 100%, @green 0);
+  }
+
+  .hero-container__center {
+    padding: 62px 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-container__title {
+    padding: 0 206px 0 86px;
+  }
+
+  .hero-container__description {
+    margin: 35px 0 49px 0;
+    padding-left: 86px;
+  }
+
+  .hero-container__image {
+    width: 709px;
+    height: 609px;
+    margin-top: -70px;
+    object-fit: contain;
+    order: 4;
+  }
 }

@@ -1,14 +1,21 @@
 .main-description {
   font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: @white;
   text-align: center;
 }
 
 .main-description--form {
-  color: #000000;
+  color: @black;
+}
+
+/* Для планшета */
+@media (min-width: @tablet-width) {
+  .main-description {
+    font-size: 20px;
+    line-height: 20px;
+    color: @black;
+    text-align: left;
+  }
 }

@@ -1,14 +1,32 @@
 .advantages__wrapper {
-  width: 320px;
-  margin: 0 auto;
   padding: 0 20px 49px 20px;
 }
 
+.advantages__title {
+  margin: 0 0 40px 0;
+}
+
+.advantages__list {
+  .list-style();
+  display: grid;
+}
+
 .advantages__description {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
+  color: @dark-grey;
+}
+
+/* Для планшета */
+@media (min-width: @tablet-width) {
+  .advantages__wrapper {
+    padding: 45px 30px 47px 30px;
+  }
+
+  .advantages__title {
+    margin: 0 0 32px 0;
+  }
+
+  .advantages__list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 153px;
+  }
 }
