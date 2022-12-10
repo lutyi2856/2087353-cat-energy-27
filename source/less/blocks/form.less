@@ -1,12 +1,51 @@
-.form-title__wrapper {
-  padding: 27px 20px 17px 20px;
-}
-
 .form__group {
   padding: 22px 20px 19px 20px;
   border-bottom: 1px solid @form-border;
-  font-family: "Oswald", sans-serif;
+  .oswald();
   font-size: 16px;
   text-transform: uppercase;
   color: @dark-grey;
+  border: 0;
+}
+
+.form__group-list {
+  .list-style();
+}
+
+.form__group-item {
+  display: flex;
+}
+
+.form__field {
+  flex-grow: 1;
+}
+
+/* Для планшета */
+@media (min-width: @tablet-width) {
+  .form__program-wrapper {
+    padding: 0 67px 71px 70px;
+  }
+
+  .form__group {
+    padding: 0;
+
+    &:first-child {
+      margin-bottom: 72px;
+    }
+  }
+
+  .form__group--border {
+    border: 1px solid @form-program-border;
+    padding: 25px 0 25px 0;
+  }
+}
+
+/* Для десктопа */
+@media (min-width: @desktop-width) {
+  .form__program-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    padding: 0 30px 65px 30px;
+  }
 }

@@ -3,14 +3,43 @@
 }
 
 .comment__field {
-  font-family: "Oswald", sans-serif;
+  width: 100%;
+  padding: 9px 0 0 15px;
+  .oswald();
   font-size: 16px;
   text-transform: uppercase;
+  text-align: left;
   color: @dark-grey;
 }
 
 .comment__field-title {
+  .oswald();
   font-size: 24px;
   line-height: 26px;
   color: @black;
+}
+
+/* Для планшета */
+@media (min-width: @tablet-width) {
+  .comment {
+    padding: 0 67px 65px 70px;
+  }
+
+  .comment__field-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+    display: block;
+  }
+
+  .comment__field {
+    padding: 10px 0 0 19px;
+  }
+}
+
+/* Для десктопа */
+@media (min-width: @desktop-width) {
+  .comment {
+    padding: 0 30px 67px 30px;
+  }
 }

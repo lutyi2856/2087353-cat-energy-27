@@ -1,14 +1,60 @@
 .owner__group {
   padding: 26px 20px 0 20px;
-  font-family: "Oswald", sans-serif;
+  .oswald();
   font-size: 16px;
   text-transform: uppercase;
   color: @dark-grey;
+  border: none;
 }
 
 .owner__group-title {
-  font-family: "Oswald", sans-serif;
+  .oswald();
   font-size: 24px;
   line-height: 26px;
   color: @black;
+}
+
+.owner__list {
+  .list-style();
+}
+
+/* Для планшета */
+@media (min-width: @tablet-width) {
+  .owner {
+    padding: 0 66px 65px 70px;
+  }
+
+  .owner__group-title {
+    font-size: 36px;
+    line-height: 36px;
+    width: 100%;
+    margin-bottom: 76px;
+    padding: 0;
+    border: 0;
+  }
+
+  .owner__group {
+    padding: 0;
+  }
+}
+
+/* Для десктопа */
+@media (min-width: @desktop-width) {
+  .owner {
+    padding: 0 30px 67px 30px;
+  }
+
+  .owner__list {
+    display: grid;
+    grid-template-columns: 569px 572px;
+    gap: 78px;
+  }
+
+  .owner__list-item {
+    display: flex;
+  }
+
+  .owner__field {
+    flex-grow: 1;
+  }
 }
