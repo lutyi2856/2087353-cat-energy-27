@@ -1,6 +1,5 @@
 .product-list {
-  padding: 0;
-  margin: 0;
+  .list-style();
 }
 
 .product-list__value {
@@ -29,5 +28,22 @@
 
   &:last-child {
     border-bottom: 1px solid @product-border;
+  }
+}
+
+/* Для планшета */
+@media (min-width: @tablet-width) {
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+
+/* Для декстопа */
+@media (min-width: @desktop-width) {
+  .product-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
   }
 }

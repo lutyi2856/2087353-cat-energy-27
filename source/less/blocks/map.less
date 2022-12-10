@@ -8,16 +8,16 @@
   background-color: @gray;
 }
 
-/* Для декстопа */
+/* Для дескстопа */
 @media (min-width: @desktop-width) {
-  .map--relative {
+  .map {
     position: relative;
   }
 
   .map__adress {
     position: absolute;
     top: 95px;
-    left: 0;
+    left: calc(50% - 600px);
     width: 565px;
     padding: 80px 56px;
     z-index: 1;
