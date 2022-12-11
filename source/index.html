@@ -4,36 +4,44 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__logo-wrapper">
-      <a href="#" class="main-header__logo-link">
-        <img class="main-header__logo-image" src="img/logo-cat.svg" width="33" height="37" alt="Значек кота.">
-      </a>
-      <a href="" class="main-header__logo-title-link">
-        <img class="main-header__logo-image-title" src="img/logo-title.svg" width="101" height="18" alt="Кэт энерджи.">
-      </a>
-    </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle">
-        <span class="visually-hidden">Открывает меню.</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="index.html">главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">подбор программы</a>
-          </li>
-        </ul>
+    <div class="main-header__container">
+      <div class="main-header__logo-wrapper">
+        <a href="#" class="main-header__logo-link">
+          <img class="main-header__logo-image" src="img/logo-cat.svg" width="33" height="37" alt="Значек кота.">
+        </a>
+        <a href="" class="main-header__logo-title-link">
+          <img class="main-header__logo-image-title" src="img/logo-title.svg" width="101" height="18"
+            alt="Кэт энерджи.">
+        </a>
+        <button class="main-header__toggle">
+          <span class="visually-hidden">Открывает меню.</span>
+          <svg class="main-header__toggle-icon" aria-hidden="true" focusable="false" fill="none" role="img"
+            aria-label="Гамбургер меню." width="24" height="16" viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg">
+            <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" />
+          </svg>
+        </button>
       </div>
-    </nav>
+      <nav class="main-header__main-nav main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="index.html">главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="main-container">
     <div class="hero-container">
@@ -59,7 +67,8 @@
           <li class="program__item">
             <h3 class="program__title program__title--slimming-icon">похудение</h3>
             <p class="program__description">
-              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
+              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy
+              Slim
               поможет вашему питомцу сбросить лишний вес.
             </p>
             <a href="" class="program__button">
@@ -69,7 +78,8 @@
           <li class="program__item">
             <h3 class="program__title program__title--brawn-icon">Набор массы</h3>
             <p class="program__description">
-              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
+              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту
+              нарастить
               необходимые мышцы!
             </p>
             <a href="" class="program__button">
@@ -111,7 +121,7 @@
     <section class="example">
       <div class="example__description-wrapper">
         <h2 class="example__title title-block">
-          Как это работает
+          Живой пример
         </h2>
         <p class="example__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
@@ -136,11 +146,10 @@
           </div>
         </dl>
         <em class="example__price">Затраты на питание: 15 000 РУБ. </em>
+        <div class="example__slider slider">
+          <img class="slider__slide" src="img/cat-slider.png" width="280" height="256" alt="Кот.">
+        </div>
       </div>
-      <div class="example__slider slider">
-        <img class="slider__slide" src="img/cat-slider.png" width="280" height="256" alt="Кот.">
-      </div>
-
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта.</h2>
@@ -156,7 +165,7 @@
         <map name="cat" class="map__area">
           <area shape="circle" coords="0,0,0">
         </map>
-        <img class="map__image" usemap="#cat" src="img/map.jpg" alt="Карта.">
+        <img class="map__image" width="320" height="362" usemap="#cat" src="img/map.jpg" alt="Карта.">
       </div>
     </section>
   </main>
