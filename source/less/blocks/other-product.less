@@ -21,23 +21,20 @@
   &:last-child {
     border-bottom: 1px solid @other-border;
   }
-}
 
-/* Для декстопа */
-@media (min-width: @desktop-width) {
-  .other-product {
-    display: grid;
-    grid-template-columns: 896px 245px;
-    gap: 79px;
-  }
-
-
-  .other-product__item {
+  @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 285px 285px 244px;
     height: 72px;
     gap: 40px;
     padding: 0;
   }
+}
 
+.other-product {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 896px 245px;
+    gap: 79px;
+  }
 }

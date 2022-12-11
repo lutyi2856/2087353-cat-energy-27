@@ -2,15 +2,14 @@
   line-height: 16px;
   text-align: center;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 64px;
+  }
 }
 
-/* Для планшета */
-@media (min-width: @tablet-width) {
-  .submit {
+.submit {
+  @media (min-width: @tablet-width) {
     padding: 0 177px 72px 70px;
-  }
-
-  .submit__description {
-    margin-left: 64px;
   }
 }

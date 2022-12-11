@@ -1,9 +1,23 @@
 .program__wrapper {
   padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 82px 30px 71px 30px;
+  }
 }
 
 .program__list {
   .list-style();
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
 }
 
 .program__item {
@@ -13,6 +27,20 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 77px 316px 53px 53px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 41px 61px 55px 52px;
   }
 }
 
@@ -35,38 +63,4 @@
   text-transform: uppercase;
   color: @black;
   text-decoration: none;
-}
-
-/* Для планшета */
-@media (min-width: @tablet-width) {
-  .program__wrapper {
-    padding: 30px;
-  }
-
-  .program__item {
-    padding: 77px 316px 53px 53px;
-    margin-bottom: 30px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
-/* Для декстопа */
-@media (min-width: @desktop-width) {
-  .program__wrapper {
-    padding: 82px 30px 71px 30px;
-  }
-
-  .program__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
-  }
-
-  .program__item {
-    margin: 0;
-    padding: 41px 61px 55px 52px;
-  }
 }

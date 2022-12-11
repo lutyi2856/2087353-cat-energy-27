@@ -5,6 +5,12 @@
   text-transform: uppercase;
   color: @white;
   background-color: @green-button;
+
+  @media (min-width: @tablet-width) {
+    padding: 14px 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .button--background {
@@ -13,25 +19,16 @@
 
 .button--product {
   padding: 10px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 0;
+  }
 }
 
 .button--other {
   padding: 10px;
-}
 
-/* Для планшета */
-@media (min-width: @tablet-width) {
-  .button {
-    padding: 14px 0;
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  .button--product {
-    padding: 10px 0;
-  }
-
-  .button--other {
+  @media (min-width: @tablet-width) {
     padding: 7px 0;
   }
 }

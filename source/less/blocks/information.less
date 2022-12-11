@@ -1,5 +1,10 @@
 .information {
   padding: 26px 20px 26px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 56px 70px;
+    display: flex;
+  }
 }
 
 .information__invite {
@@ -9,26 +14,18 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @information;
+
+  @media (min-width: @tablet-width) {
+    width: 171px;
+  }
 }
 
 .information__address {
   font-style: normal;
   line-height: 20px;
   color: @dark-grey;
-}
 
-/* Для планшета */
-@media (min-width: @tablet-width) {
-  .information {
-    padding: 56px 70px;
-    display: flex;
-  }
-
-  .information__invite {
-    width: 171px;
-  }
-
-  .information__address {
+  @media (min-width: @tablet-width) {
     width: 160px;
     margin-left: auto;
     text-align: right;

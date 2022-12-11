@@ -6,6 +6,14 @@
   text-transform: uppercase;
   color: @dark-grey;
   border: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+
+    &:first-child {
+      margin-bottom: 72px;
+    }
+  }
 }
 
 .form__group-list {
@@ -20,32 +28,22 @@
   flex-grow: 1;
 }
 
-/* Для планшета */
-@media (min-width: @tablet-width) {
-  .form__program-wrapper {
+.form__program-wrapper {
+  @media (min-width: @tablet-width) {
     padding: 0 67px 71px 70px;
   }
 
-  .form__group {
-    padding: 0;
-
-    &:first-child {
-      margin-bottom: 72px;
-    }
-  }
-
-  .form__group--border {
-    border: 1px solid @form-program-border;
-    padding: 25px 0 25px 0;
-  }
-}
-
-/* Для десктопа */
-@media (min-width: @desktop-width) {
-  .form__program-wrapper {
+  @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 80px;
     padding: 0 30px 65px 30px;
+  }
+}
+
+.form__group--border {
+  @media (min-width: @tablet-width) {
+    border: 1px solid @form-program-border;
+    padding: 25px 0 25px 28px;
   }
 }

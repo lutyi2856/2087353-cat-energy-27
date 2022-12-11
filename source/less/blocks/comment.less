@@ -1,5 +1,13 @@
 .comment {
   padding: 24px 20px 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 67px 65px 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 30px 67px 30px;
+  }
 }
 
 .comment__field {
@@ -10,6 +18,10 @@
   text-transform: uppercase;
   text-align: left;
   color: @dark-grey;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 0 0 19px;
+  }
 }
 
 .comment__field-title {
@@ -17,23 +29,12 @@
   font-size: 24px;
   line-height: 26px;
   color: @black;
-}
 
-/* Для планшета */
-@media (min-width: @tablet-width) {
-  .comment {
-    padding: 0 67px 65px 70px;
-  }
-
-  .comment__field-title {
+  @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
     display: block;
-  }
-
-  .comment__field {
-    padding: 10px 0 0 19px;
   }
 }
 

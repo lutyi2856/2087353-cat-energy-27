@@ -4,22 +4,20 @@
   text-transform: uppercase;
   color: @white;
   text-align: center;
-}
 
-.main-description--form {
-  color: @black;
-}
-
-/* Для планшета */
-@media (min-width: @tablet-width) {
-  .main-description {
+  @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: @black;
     text-align: left;
   }
+}
 
-  .main-description--form {
+.main-description--form {
+  color: @black;
+
+  @media (min-width: @tablet-width) {
     line-height: 30px;
   }
 }
+

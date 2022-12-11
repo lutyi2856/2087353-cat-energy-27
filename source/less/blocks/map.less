@@ -1,20 +1,25 @@
+.map {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
 .map__image {
   display: block;
   width: 100%;
   object-fit: cover;
+
+  @media (min-width: @desktop-width) {
+    height: 400px;
+  }
 }
 
 .map--background {
   background-color: @gray;
 }
 
-/* Для дескстопа */
-@media (min-width: @desktop-width) {
-  .map {
-    position: relative;
-  }
-
-  .map__adress {
+.map__adress {
+  @media (min-width: @desktop-width) {
     position: absolute;
     top: 95px;
     left: calc(50% - 600px);
@@ -22,9 +27,5 @@
     padding: 80px 56px;
     z-index: 1;
     background-color: @white;
-  }
-
-  .map__image {
-    height: 400px;
   }
 }

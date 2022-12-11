@@ -4,6 +4,12 @@
 
 .main-footer__wrapper {
   padding: 39px 20px 22px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 58px 30px 55px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-footer__social-list {
@@ -16,13 +22,4 @@
   line-height: 19px;
   color: @dark-grey;
   text-decoration: none;
-}
-
-/* Для планшета */
-@media (min-width: @tablet-width)  {
-  .main-footer__wrapper {
-    padding: 58px 30px 55px 30px;
-    display: flex;
-    justify-content: space-between;
-  }
 }

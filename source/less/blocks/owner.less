@@ -1,3 +1,13 @@
+.owner {
+  @media (min-width: @tablet-width) {
+    padding: 0 66px 65px 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 30px 67px 30px;
+  }
+}
+
 .owner__group {
   padding: 26px 20px 0 20px;
   .oswald();
@@ -5,6 +15,10 @@
   text-transform: uppercase;
   color: @dark-grey;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .owner__group-title {
@@ -12,19 +26,8 @@
   font-size: 24px;
   line-height: 26px;
   color: @black;
-}
 
-.owner__list {
-  .list-style();
-}
-
-/* Для планшета */
-@media (min-width: @tablet-width) {
-  .owner {
-    padding: 0 66px 65px 70px;
-  }
-
-  .owner__group-title {
+  @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     width: 100%;
@@ -32,29 +35,26 @@
     padding: 0;
     border: 0;
   }
-
-  .owner__group {
-    padding: 0;
-  }
 }
 
-/* Для десктопа */
-@media (min-width: @desktop-width) {
-  .owner {
-    padding: 0 30px 67px 30px;
-  }
+.owner__list {
+  .list-style();
 
-  .owner__list {
+  @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 569px 572px;
     gap: 78px;
   }
+}
 
-  .owner__list-item {
+.owner__list-item {
+  @media (min-width: @desktop-width) {
     display: flex;
   }
+}
 
-  .owner__field {
+.owner__field {
+  @media (min-width: @desktop-width) {
     flex-grow: 1;
   }
 }

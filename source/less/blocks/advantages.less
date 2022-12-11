@@ -1,51 +1,46 @@
 .advantages__wrapper {
   padding: 0 20px 49px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 45px 30px 47px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 30px 69px 30px;
+  }
 }
 
 .advantages__title {
   margin: 0 0 40px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 32px 0;
+  }
 }
 
 .advantages__list {
   .list-style();
   display: grid;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 153px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 153px;
+  }
 }
 
 .advantages__description {
   color: @dark-grey;
   margin: 0;
   padding: 151px 22px 57px 0;
-}
 
-/* Для планшета */
-@media (min-width: @tablet-width) {
-  .advantages__wrapper {
-    padding: 45px 30px 47px 30px;
-  }
-
-  .advantages__title {
-    margin: 0 0 32px 0;
-  }
-
-  .advantages__list {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 153px;
-  }
-
-  .advantages__description {
+  @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
   }
 }
 
-/* Для декстопа */
-@media (min-width: @desktop-width) {
-  .advantages__wrapper {
-    padding: 0 30px 69px 30px;
-  }
-
-  .advantages__list {
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 153px;
-  }
-}
