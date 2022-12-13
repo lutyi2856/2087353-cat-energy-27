@@ -1,19 +1,60 @@
+.owner {
+  @media (min-width: @tablet-width) {
+    padding: 0 66px 65px 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 30px 67px 30px;
+  }
+}
+
 .owner__group {
   padding: 26px 20px 0 20px;
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  .oswald();
   font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: @dark-grey;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .owner__group-title {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  .oswald();
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    width: 100%;
+    margin-bottom: 76px;
+    padding: 0;
+    border: 0;
+  }
+}
+
+.owner__list {
+  .list-style();
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 569px 572px;
+    gap: 78px;
+  }
+}
+
+.owner__list-item {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.owner__field {
+  @media (min-width: @desktop-width) {
+    flex-grow: 1;
+  }
 }

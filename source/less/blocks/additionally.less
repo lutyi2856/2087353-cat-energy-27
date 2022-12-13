@@ -1,19 +1,42 @@
 .additionally {
   padding: 23px 20px 34px 20px;
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  .oswald();
   font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
-  color: #000000;
+  color: @black;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 165px 54px 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 30px 65px 30px;
+  }
+}
+
+.additionally__group {
+  border: none;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .additionally__group-title {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 34px;
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: @black;
+}
+
+.additionally__list {
+  .list-style();
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

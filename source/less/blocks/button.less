@@ -1,15 +1,35 @@
 .button {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  padding: 7px 0;
+  .oswald();
+  text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #68b738;
+  color: @white;
+  background-color: @green-button;
+
+  @media (min-width: @tablet-width) {
+    padding: 14px 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .button--background {
-  background-color: #f2f2f2;
+  background-color: @gray;
+}
+
+.button--product {
+  padding: 10px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 0;
+  }
+}
+
+.button--other {
+  padding: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding: 7px 0;
+  }
 }
