@@ -1,14 +1,31 @@
+.map {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
 .map__image {
   display: block;
   width: 100%;
   object-fit: cover;
+
+  @media (min-width: @desktop-width) {
+    height: 400px;
+  }
+}
+
+.map--background {
+  background-color: @gray;
 }
 
 .map__adress {
-  width: 320px;
-  margin: 0 auto;
-}
-
-.map__adress--background {
-  background-color: #f2f2f2;
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: calc(50% - 600px);
+    width: 565px;
+    padding: 80px 56px;
+    z-index: 1;
+    background-color: @white;
+  }
 }

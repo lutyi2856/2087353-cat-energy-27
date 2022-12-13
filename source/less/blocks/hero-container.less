@@ -1,14 +1,35 @@
 .hero-container {
-  background: linear-gradient(360deg, #ffffff 217px, #68B738 0);
-  background-image: url("../../img/cat-background-hero.jpg");
-  background-position: center;
+  background: linear-gradient(360deg, #ffffff 150px, @green 0), url("../../img/cat-background-hero.png");
+  background-position: center, top;
   background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(360deg, #ffffff 100%, @green 0);
+  }
+
+  @media (min-width: @desktop-width) {
+    background: linear-gradient(450deg, #ffffff 50%, @green 50%), url("../../img/index-background-desktop.jpg");
+    background-position: center, top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .hero-container__center {
-  width: 320px;
-  margin: 0 auto;
   padding: 27px 20px 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 62px 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 111px 30px 50px 30px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .hero-container__main {
@@ -16,6 +37,52 @@
   flex-direction: column;
 }
 
+.hero-container__title {
+  @media (min-width: @tablet-width) {
+    padding: 0 206px 0 86px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 606px 0 76px;
+  }
+}
+
 .hero-container__description {
   margin-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin: 35px 0 49px 0;
+    padding-left: 91px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 40px 0 52px 0;
+    padding-left: 76px;
+  }
+}
+
+.hero-container__image {
+  @media (min-width: @tablet-width) {
+    width: 709px;
+    height: 609px;
+    margin-top: -70px;
+    object-fit: contain;
+    order: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 522px;
+    height: 499px;
+    margin-top: -380px;
+    margin-left: 474px;
+  }
+}
+
+.hero-container__button {
+  @media (min-width: @tablet-width) {
+    margin-left: 91px;
+    order: 3;
+    z-index: 1;
+    width: 244px;
+  }
 }

@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__container">
+    <div class="main-header__container container-center">
       <div class="main-header__logo-wrapper">
         <a href="#" class="main-header__logo-link">
           <img class="main-header__logo-image" src="img/logo-cat.svg" width="33" height="37" alt="Значек кота.">
@@ -44,7 +45,7 @@
     </div>
   </header>
   <main class="main-container">
-    <div class="main-container__center">
+    <div class="main-container__center container-center">
       <section class="form-title">
         <div class="form-title__wrapper">
           <h1 class="form-title__title main-title main-title--form">
@@ -63,7 +64,7 @@
           <form class="form__form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="form__program-wrapper">
               <fieldset class="form__group">
-                <legend class="form__group-title">
+                <legend class="form__group-title visually-hidden">
                   Данные
                 </legend>
                 <ul class="form__group-list">
@@ -83,8 +84,8 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="form__group">
-                <legend class="form__group-title">
+              <fieldset class="form__group form__group--border">
+                <legend class="form__group-title visually-hidden">
                   Программа
                 </legend>
                 <ul class="form__group-list radio-group">
@@ -126,9 +127,8 @@
             </div>
             <div class="comment">
               <label class="comment__field-title" for="comment">Комментарий</label>
-              <textarea class="comment__field" id="comment" name="comment" rows="5">
-              Расскажите обо всех повадках кота
-            </textarea>
+              <textarea class="comment__field" id="comment" name="comment" rows="5">Расскажите обо всех повадках кота
+              </textarea>
             </div>
             <div class="additionally">
               <fieldset class="additionally__group">
@@ -166,27 +166,27 @@
           </form>
         </div>
       </section>
-      <section class="map">
-        <h2 class="visually-hidden">Карта.</h2>
-        <div class="map__adress information">
-          <strong class="information__invite">
-            приглашаем к сотрудничеству дилеров!
-          </strong>
-          <address class="information__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
-        </div>
-        <div class="map__wrapper">
-          <map name="cat" class="map__area">
-            <area shape="circle" coords="0,0,0">
-          </map>
-          <img class="map__image" usemap="#cat" width="320" height="362" src="img/map.jpg" alt="Карта.">
-        </div>
-      </section>
     </div>
+    <section class="map map--background">
+      <h2 class="visually-hidden">Карта.</h2>
+      <div class="map__adress information container-center">
+        <strong class="information__invite">
+          приглашаем к сотрудничеству дилеров!
+        </strong>
+        <address class="information__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </address>
+      </div>
+      <div class="map__wrapper">
+        <map name="cat" class="map__area">
+          <area shape="circle" coords="0,0,0">
+        </map>
+        <img class="map__image" usemap="#cat" width="320" height="362" src="img/map.jpg" alt="Карта.">
+      </div>
+    </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
+    <div class="main-footer__wrapper container-center">
       <a href="" class="main-footer__logo-link">
         <img class="main-footer__logo-image" src="img/logo-footer.svg" alt="Кэт энерджи.">
       </a>

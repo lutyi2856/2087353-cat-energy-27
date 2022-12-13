@@ -1,3 +1,23 @@
 .shop__wrapper {
   padding: 25px 20px 35px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 65px 30px 82px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 74px 30px 84px 30px;
+  }
+}
+
+.shop__title {
+  margin: 0;
+  .oswald();
+  font-size: 36px;
+  line-height: 36px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
