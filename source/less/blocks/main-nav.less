@@ -1,3 +1,9 @@
+.main-header {
+  @media (min-width: @desktop-width) {
+    background: linear-gradient(90deg, #ffffff 50%, @green-background 50%);
+  }
+}
+
 .main-nav {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
@@ -43,6 +49,10 @@
       border: none;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    z-index: 1;
+  }
 }
 
 .main-nav__link {
@@ -63,6 +73,5 @@
     font-size: 20px;
     line-height: 30px;
     color: @white;
-    background-color: @background-gray;
   }
 }

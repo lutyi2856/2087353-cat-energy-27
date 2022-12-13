@@ -9,10 +9,36 @@
   }
 
   @media (min-width: @desktop-width) {
-    background: linear-gradient(450deg, #ffffff 50%, @green 50%), url("../../img/index-background-desktop.jpg");
+    position: relative;
+    background: linear-gradient(90deg, #ffffff 50%, @green-background 50%);
     background-position: center, top;
     background-repeat: no-repeat;
     background-size: contain;
+    padding-bottom: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -116px;
+      left: 50%;
+      width: 720px;
+      height: 694px;
+      background-image: url("../../img/index-background-desktop.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -116px;
+      left: 50%;
+      width: 720px;
+      height: 694px;
+      background-color: @green;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -74,7 +100,8 @@
     width: 522px;
     height: 499px;
     margin-top: -380px;
-    margin-left: 474px;
+    margin-left: 478px;
+    z-index: 1;
   }
 }
 

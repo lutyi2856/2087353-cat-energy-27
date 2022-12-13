@@ -59,7 +59,14 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    padding: 41px 61px 55px 52px;
+    padding: 77px 61px 55px 52px;
+
+    &::before {
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
   }
 }
 
@@ -85,6 +92,15 @@
       height: 194px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      top: 41px;
+      left: 67px;
+      width: 70px;
+      height: 97px;
+    }
+  }
 }
 
 .program__item--brawn-icon::after {
@@ -104,6 +120,13 @@
     width: 268px;
     height: 112px;
   }
+
+  @media (min-width: @desktop-width) {
+    top: 67px;
+    left: 33px;
+    width: 134px;
+    height: 56px;
+  }
 }
 
 .program__title {
@@ -121,6 +144,11 @@
     line-height: 36px;
     margin: 0 0 24px 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 162px;
+    margin: 0 0 73px 0;
+  }
 }
 
 .program__description {
@@ -136,6 +164,10 @@
     line-height: 24px;
     color: @black;
     border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 23px;
   }
 }
 
@@ -158,4 +190,17 @@
     width: 24px;
     height: 12px;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      top: -2px;
+      left: 133px;
+      width: 24px;
+      height: 10px;
+    }
+  }
+
 }
