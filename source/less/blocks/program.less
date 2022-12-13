@@ -21,12 +21,24 @@
 }
 
 .program__item {
+  position: relative;
   margin-bottom: 20px;
   padding: 30px 33px 18px 20px;
   background-color: @gray;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: @green-button;
   }
 
   @media (min-width: @tablet-width) {
@@ -36,6 +48,13 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    &::before {
+      top: 92px;
+      left: 446px;
+      width: 200px;
+      height: 200px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -44,23 +63,99 @@
   }
 }
 
+.program__item--slimming-icon {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 29px;
+    width: 36px;
+    height: 50px;
+    background-image: url("../../img/cat-sitting.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      top: 81px;
+      left: 476px;
+      width: 140px;
+      height: 194px;
+    }
+  }
+}
+
+.program__item--brawn-icon::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 13px;
+  width: 67px;
+  height: 50px;
+  background-image: url("../../img/cat-slim.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    top: 135px;
+    left: 412px;
+    width: 268px;
+    height: 112px;
+  }
+}
+
 .program__title {
-  font-family: "Oswald", sans-serif;
+  padding-left: 69px;
+  margin: 0 0 29px 0;
+  .oswald();
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 24px 0;
+  }
 }
 
 .program__description {
+  margin: 0;
+  padding-bottom: 23px;
   color: @dark-grey;
+  border-bottom: 1px solid @form-border;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 48px;
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: @black;
+    border: none;
+  }
 }
 
 .program__button {
-  font-family: "Oswald", sans-serif;
+  position: relative;
+  margin-top: 15px;
+  display: block;
+  .oswald();
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: @black;
   text-decoration: none;
+
+  &::after {
+    content: url("../../img/arrow-programs.svg");
+    position: absolute;
+    top: 0;
+    left: 98px;
+    width: 24px;
+    height: 12px;
+  }
 }
