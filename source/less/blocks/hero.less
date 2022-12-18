@@ -1,4 +1,4 @@
-.hero-container {
+.hero {
   background: linear-gradient(360deg, #ffffff 150px, @green 0), url("../../img/cat-background-hero.png");
   background-position: center, top;
   background-repeat: no-repeat;
@@ -10,6 +10,7 @@
 
   @media (min-width: @desktop-width) {
     position: relative;
+    margin-top: -120px;
     background: linear-gradient(90deg, #ffffff 50%, @green-background 50%);
     background-position: center, top;
     background-repeat: no-repeat;
@@ -19,7 +20,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: -116px;
+      top: 0;
       left: 50%;
       width: 720px;
       height: 694px;
@@ -31,7 +32,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: -116px;
+      top: 0;
       left: 50%;
       width: 720px;
       height: 694px;
@@ -42,7 +43,7 @@
   }
 }
 
-.hero-container__center {
+.hero__container {
   padding: 27px 20px 0 20px;
 
   @media (min-width: @tablet-width) {
@@ -52,18 +53,18 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 111px 30px 50px 30px;
+    padding: 231px 30px 50px 30px;
     display: flex;
     flex-direction: column;
   }
 }
 
-.hero-container__main {
+.hero__main {
   display: flex;
   flex-direction: column;
 }
 
-.hero-container__title {
+.hero__title {
   @media (min-width: @tablet-width) {
     padding: 0 206px 0 86px;
   }
@@ -73,7 +74,7 @@
   }
 }
 
-.hero-container__description {
+.hero__description {
   margin-top: 25px;
 
   @media (min-width: @tablet-width) {
@@ -87,7 +88,7 @@
   }
 }
 
-.hero-container__image {
+.hero__image {
   @media (min-width: @tablet-width) {
     width: 709px;
     height: 609px;
@@ -105,7 +106,7 @@
   }
 }
 
-.hero-container__button {
+.hero__button {
   @media (min-width: @tablet-width) {
     margin-left: 91px;
     order: 3;

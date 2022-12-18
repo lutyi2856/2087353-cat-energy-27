@@ -36,6 +36,10 @@
   @media (min-width: @tablet-width) {
     display: flex;
   }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: wrap;
+  }
 }
 
 .example__title {
@@ -98,6 +102,12 @@
       height: 77px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &:last-child {
+      margin: 0 0 0 42px;
+    }
+  }
 }
 
 .example__price {
@@ -115,6 +125,12 @@
     margin: 0;
     font-size: 20px;
     text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    margin-top: 55px;
+    text-align: left;
   }
 }
 
@@ -165,5 +181,11 @@
     width: max-content;
     font-size: 14px;
     line-height: 14px;
+  }
+}
+
+.example__price-value {
+  @media (min-width: @desktop-width) {
+    margin-left: 63px;
   }
 }
