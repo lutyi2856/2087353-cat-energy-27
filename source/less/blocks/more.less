@@ -1,19 +1,74 @@
+.more {
+  padding: 25px 0;
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    background: @white;
+    border: 2px solid @gray;
+    margin-top: 47px;
+    padding: 51px 40px 40px 40px;
+  }
+}
+
 .more__title {
+  display: block;
+  margin-bottom: 8px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: @information;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 49px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .more__description {
+  margin: 0 0 21px 0;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
   color: @dark-grey;
+
+  @media (min-width: @desktop-width) {
+    margin: 23px 0 0 0;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .more__image {
+  display: flex;
+  margin: 0 auto 23px auto;
+}
+
+.more__link {
+  padding: 10px 0;
+  text-decoration: none;
+  .oswald();
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @dark-grey;
+  background-color: @gray;
   display: block;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 87px;
+  }
+}
+
+.more--border::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  width: 200%;
+  height: 1px;
+  background-color: @nav-item-border;
 }

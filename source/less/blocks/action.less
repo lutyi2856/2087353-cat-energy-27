@@ -4,6 +4,7 @@
   background-image: url("../../img/cat-action.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .action__description {
@@ -12,10 +13,15 @@
   line-height: 20px;
   text-align: center;
   color: @white;
+
+  @media (min-width: @desktop-width) {
+    padding: 184px 43px 42px 41px;
+  }
 }
 
 .action {
   @media (min-width: @desktop-width) {
+    display: grid;
     align-items: end;
   }
 }
