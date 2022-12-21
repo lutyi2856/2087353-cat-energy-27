@@ -1,27 +1,71 @@
 .action__wrapper {
+  position: relative;
   margin: 35px 0;
   background-color: @green;
   background-image: url("../../img/cat-action.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    background-size: cover;
+  }
 }
 
 .action__description {
-  padding: 187px 88.5px 43px 88.5px;
+  padding: 187px 69px 43px 69px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: @white;
 
+  @media (min-width: @tablet-width) {
+    padding: 71px 124px 69px 422px;
+    text-align: left;
+  }
+
+
   @media (min-width: @desktop-width) {
     padding: 184px 43px 42px 41px;
+    text-align: center;
   }
 }
 
 .action {
+  position: relative;
+  padding: 0 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 59px;
+    left: 50%;
+    width: 78px;
+    height: 80px;
+    transform: translateX(-50%);
+    background-image: url("../../img/gift.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      top: 57px;
+      left: 77px;
+      transform: translateX(0);
+    }
+  }
+
   @media (min-width: @desktop-width) {
-    display: grid;
-    align-items: end;
+    grid-area: 1 / 2 / -1 / 3;
+    padding: 0;
+    margin-top: 124px;
+
+    &::after {
+      top: 56px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }

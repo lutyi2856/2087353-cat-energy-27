@@ -1,8 +1,18 @@
 .other-product__wrapper {
   padding: 25px 0 30px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 68px 30px 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-area: 1 / 1 / -1 / 2;
+    padding: 0 0 0 0;
+  }
 }
 
 .other-product__title {
+  position: relative;
   margin: 25px 0 30px 0;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -10,8 +20,37 @@
   text-align: left;
   color: @black;
 
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 80px;
+    padding-left: 67px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: -95%;
+      top: 50%;
+      transform: translate(-37px, 0);
+      background-color: @green-button;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 390px;
+      top: 50%;
+      background-color: @green-button;
+    }
+  }
+
+
   @media (min-width: @desktop-width) {
-    position: relative;
+    padding-left: 0;
+    margin-bottom: 81px;
     font-size: 36px;
     line-height: 36px;
     text-align: left;
@@ -41,6 +80,10 @@
 
 .other-product__list {
   .list-style();
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+  }
 }
 
 .other-product__item {
@@ -52,11 +95,15 @@
     border-bottom: 1px solid @other-border;
   }
 
+  @media (min-width: @tablet-width) {
+    grid-template-columns: auto auto;
+  }
+
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 285px 285px 244px;
+    grid-template-columns: 325px 285px 284px;
+    align-content: center;
     height: 72px;
-    gap: 40px;
     padding: 0;
   }
 }
@@ -65,7 +112,10 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 896px 245px;
-    gap: 79px;
+    grid-template-rows: 192px 288px;
+    column-gap: 79px;
+    padding: 0 30px;
+    margin-bottom: 50px;
   }
 }
 
@@ -78,6 +128,7 @@
   color: @product-itle;
 
   @media (min-width: @tablet-width) {
+    align-self: center;
     font-size: 20px;
     line-height: 20px;
   }
@@ -86,4 +137,23 @@
 .other-product__feature {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    justify-content: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.other-product__link {
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 3 / -1;
+    margin-left: 40px;
+  }
 }
