@@ -45,9 +45,9 @@
     </div>
   </header>
   <main class="main">
-    <div class="main__container container">
+    <div class="main__container">
       <section class="form-title">
-        <div class="form-title__wrapper">
+        <div class="form-title__wrapper container">
           <h1 class="form-title__title main-title main-title--form">
             Подбор программы
           </h1>
@@ -63,7 +63,7 @@
         <div class="form__wrapper">
           <form class="form__form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="form__program-wrapper">
-              <fieldset class="form__group">
+              <fieldset class="form__group container">
                 <legend class="form__group-title visually-hidden">
                   Данные
                 </legend>
@@ -84,54 +84,54 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="form__group form__group--border">
+              <fieldset class="form__group form__group--border container">
                 <legend class="form__group-title visually-hidden">
                   Программа
                 </legend>
-                <ul class="form__group-list radio-group">
-                  <li class="radio-group__item">
-                    <input class="radio-group__field" type="radio" id="weight-loss" name="weight-loss" value="похудение"
+                <ul class="form__group-list radio">
+                  <li class="form__radio-item">
+                    <input class="form__radio-field" type="radio" id="weight-loss" name="weight-loss" value="похудение"
                       checked>
-                    <label class="radio-group__label" for="weight-loss">похудение</label>
+                    <label class="form__radio-label" for="weight-loss">похудение</label>
                   </li>
-                  <li class="radio-group__item">
-                    <input class="radio-group__field" type="radio" id="mass-gain" name="mass-gain" value="Набор массы">
-                    <label class="radio-group__label" for="mass-gain">набор массы</label>
+                  <li class="form__radio-item">
+                    <input class="form__radio-field" type="radio" id="mass-gain" name="mass-gain" value="Набор массы">
+                    <label class="form__radio-label" for="mass-gain">набор массы</label>
                   </li>
-                  <li class="radio-group__item">
-                    <input class="radio-group__field" type="radio" id="soviet" name="soviet"
+                  <li class="form__radio-item">
+                    <input class="form__radio-field" type="radio" id="soviet" name="soviet"
                       value="Не знаю (Нужен ваш совет)">
-                    <label class="radio-group__label" for="soviet">Не знаю (Нужен ваш совет)</label>
+                    <label class="form__radio-label" for="soviet">Не знаю (Нужен ваш совет)</label>
                   </li>
                 </ul>
               </fieldset>
             </div>
             <div class="owner">
-              <fieldset class="owner__group">
+              <fieldset class="owner__group container">
                 <legend class="owner__group-title">
                   Контактные данные (владельца кота)
                 </legend>
                 <ul class="owner__list">
                   <li class="owner__list-item">
                     <label class="owner__field-title" for="email">E-mail:*</label>
-                    <input class="owner__field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
+                    <input class="owner__field owner__field--letter" type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
                       required>
                   </li>
                   <li class="owner__list-item">
                     <label class="owner__field-title" for="telephon">Телефон:*</label>
-                    <input class="owner__field" type="tel" id="telephon" name="telephon" placeholder="8 (960) 900-60-90"
+                    <input class="owner__field owner__field--phone" type="tel" id="telephon" name="telephon" placeholder="8 (960) 900-60-90"
                       required>
                   </li>
                 </ul>
               </fieldset>
             </div>
-            <div class="comment">
+            <div class="comment container">
               <label class="comment__field-title" for="comment">Комментарий</label>
               <textarea class="comment__field" id="comment" name="comment" rows="5">Расскажите обо всех повадках кота
               </textarea>
             </div>
             <div class="additionally">
-              <fieldset class="additionally__group">
+              <fieldset class="additionally__group container">
                 <legend class="additionally__group-title">
                   Дополнительно
                 </legend>
@@ -155,7 +155,7 @@
                 </ul>
               </fieldset>
             </div>
-            <div class="submit">
+            <div class="submit container">
               <button class="submit__button button" type="submit">
                 отправить заявку
               </button>
