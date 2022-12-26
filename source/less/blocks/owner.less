@@ -1,20 +1,16 @@
 .owner {
   position: relative;
+  overflow-x: hidden;
   padding: 26px 0 0 0;
-  // background-image: url("../../img/line.svg");
-  // background-position: top 44px center left -99px;
-  // background-repeat: no-repeat;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 44px;
-    left: 50%;
-    transform: translateX(99px);
-    width: 100%;
-    height: 2px;
-    background-color: @green-button;
-  }
+
+.owner__group {
+  padding: 26px 20px 0 20px;
+  .oswald();
+  font-size: 16px;
+  text-transform: uppercase;
+  color: @dark-grey;
 
   @media (min-width: @tablet-width) {
     padding: 0 66px 65px 70px;
@@ -25,34 +21,65 @@
   }
 }
 
-.owner__group {
-  padding: 35px 20px 0 20px;
-  .oswald();
-  font-size: 16px;
-  text-transform: uppercase;
-  color: @dark-grey;
-  border: none;
-
-  @media (min-width: @tablet-width) {
-    padding: 0;
-  }
-}
-
 .owner__group-title {
   position: relative;
+  width: 227px;
+  display: inline-block;
+  margin: 0 0 35px 0;
   .oswald();
+  font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: @black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 20px);
+    width: 10000%;
+    height: 2px;
+    background-color: @green-button;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 14px);
+    width: 10000%;
+    height: 2px;
+    background-color: @green-button;
+    z-index: -1;
+  }
 
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    width: 100%;
+    width: 592px;
     margin-bottom: 76px;
-    padding: 0;
-    border: 0;
+
+    &::before {
+      right: calc(100% + 39px);
+    }
+
+
+    &::after {
+      left: calc(100% + 42px);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      right: calc(100% + 40px);
+    }
+
+
+    &::after {
+      left: calc(100% + 40px);
+    }
   }
 }
 
@@ -119,4 +146,3 @@
   background-repeat: no-repeat;
   background-size: 20px;
 }
-

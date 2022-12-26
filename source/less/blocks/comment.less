@@ -1,4 +1,9 @@
 .comment {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.comment__wrapper {
   padding: 24px 20px 0 20px;
 
   @media (min-width: @tablet-width) {
@@ -26,19 +31,60 @@
 
 .comment__field-title {
   position: relative;
-  display: block;
-  margin-bottom: 35px;
+  display: inline-block;
+  margin-bottom: 37px;
   .oswald();
   font-size: 24px;
   line-height: 26px;
   color: @black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 20px);
+    width: 10000%;
+    height: 2px;
+    background-color: @green-button;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 22px);
+    width: 10000%;
+    height: 2px;
+    background-color: @green-button;
+    z-index: -1;
+  }
 
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
-    display: block;
+
+    &::before {
+      right: calc(100% + 39px);
+    }
+
+
+    &::after {
+      left: calc(100% + 38px);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      right: calc(100% + 40px);
+    }
+
+
+    &::after {
+      left: calc(100% + 40px);
+    }
   }
 }
 

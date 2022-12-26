@@ -1,3 +1,10 @@
+.shop {
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid @nav-item-border;
+    border-bottom: 1px solid @nav-item-border;
+  }
+}
+
 .shop__wrapper {
   padding: 25px 20px 35px 20px;
 
@@ -15,6 +22,8 @@
   .oswald();
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
+  text-align: left;
 
   @media (min-width: @desktop-width) {
     font-size: 60px;

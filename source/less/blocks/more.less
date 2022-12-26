@@ -14,6 +14,14 @@
   }
 }
 
+.more__item-wrapper {
+  @media (max-width: @mobile-width-only) {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
 .more__title {
   display: block;
   margin-bottom: 8px;
@@ -77,16 +85,3 @@
   }
 }
 
-.more--border::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: -50%;
-  width: 200%;
-  height: 1px;
-  background-color: @nav-item-border;
-
-  @media (min-width: @tablet-width) {
-    content: none;
-  }
-}
