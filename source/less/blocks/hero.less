@@ -4,6 +4,11 @@
   background-repeat: no-repeat;
   background-size: 100%;
 
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(360deg, #ffffff 150px, @green 0), url("../../img/cat-background-hero@2x.png");
+    background-size: 100% auto;
+  }
+
   @media (min-width: @tablet-width) {
     background: linear-gradient(360deg, #ffffff 100%, @green 0);
   }
@@ -12,9 +17,9 @@
     position: relative;
     margin-top: -120px;
     background: linear-gradient(90deg, #ffffff 50%, @green-background 50%);
-    background-position: center, top;
+    background-position: top, center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 695px;
     padding-bottom: 20px;
 
     &::before {
@@ -39,6 +44,13 @@
       background-color: @green;
       background-size: contain;
       background-repeat: no-repeat;
+    }
+
+    @media (min-resolution: 2dppx) {
+      &::before {
+        background-image: url("../../img/index-background-desktop@2x.jpg");
+        background-size: contain;
+      }
     }
   }
 }
@@ -88,27 +100,35 @@
   }
 }
 
+.hero__wrapper-image {
+  @media (min-width: @tablet-width) {
+    order: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    z-index: 1;
+  }
+}
+
 .hero__image {
   @media (min-width: @tablet-width) {
     width: 709px;
     height: 609px;
     margin-top: -70px;
     object-fit: contain;
-    order: 4;
   }
 
   @media (min-width: @desktop-width) {
     width: 522px;
     height: 499px;
     margin-top: -380px;
-    margin-left: 478px;
-    z-index: 1;
+    margin-left: 457px;
   }
 }
 
 .hero__button {
   @media (min-width: @tablet-width) {
-    margin-left: 76px;
+    margin-left: 91px;
     order: 3;
     z-index: 1;
     width: 244px;

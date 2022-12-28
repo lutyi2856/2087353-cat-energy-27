@@ -13,7 +13,11 @@
     <div class="main-header__container container">
       <div class="main-header__logo-wrapper">
         <a href="#" class="main-header__logo-link">
-          <img class="main-header__logo-image" src="img/logo-cat.svg" width="33" height="37" alt="Значек кота.">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/logo-cat-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg">
+            <img class="main-header__logo-image" src="img/logo-cat.svg" width="33" height="37" alt="Значек кота.">
+          </picture>
         </a>
         <a href="" class="main-header__logo-title-link">
           <img class="main-header__logo-image-title" src="img/logo-title.svg" width="101" height="18"
@@ -187,7 +191,12 @@
         <map name="cat" class="map__area">
           <area shape="circle" coords="0,0,0">
         </map>
-        <img class="map__image" usemap="#cat" width="320" height="362" src="img/map.jpg" alt="Карта.">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img class="map__image" src="img/map.jpg" srcset="img/map@2x.jpg" width="320" height="362" usemap="#cat"
+            alt="Карта.">
+        </picture>
       </div>
     </section>
   </main>

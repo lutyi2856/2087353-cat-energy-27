@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -13,18 +17,21 @@
     <div class="main-header__container container">
       <div class="main-header__logo-wrapper">
         <a href="#" class="main-header__logo-link">
-          <img class="main-header__logo-image" src="img/logo-cat.svg" width="33" height="37" alt="Значек кота.">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/logo-cat-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg">
+            <img class="main-header__logo-image" src="img/logo-cat.svg" width="33" height="37" alt="Значек кота.">
+          </picture>
         </a>
         <a href="" class="main-header__logo-title-link">
-          <img class="main-header__logo-image-title" src="img/logo-title.svg" width="101" height="18"
-            alt="Кэт энерджи.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo-title-tablet.svg">
+            <img class="main-header__logo-image-title" src="img/logo-title.svg" width="101" height="18"
+              alt="Кэт энерджи.">
+          </picture>
         </a>
         <button class="main-header__toggle main-header__toggle--open main-header__toggle--close">
           <span class="visually-hidden">Открывает меню.</span>
-          <!-- <svg class="main-header__toggle-icon" aria-hidden="true" focusable="false" fill="none" role="img"
-            aria-label="Гамбургер меню." width="24" height="16" viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg">
-            <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" />
-          </svg> -->
         </button>
       </div>
       <nav class="main-header__main-nav main-nav">
@@ -54,7 +61,16 @@
           <p class="hero__description main-description">
             Занялся собой? Займись котом!
           </p>
-          <img class="hero__image" src="img/hero-product.png" width="280" height="270" alt="Банка продукта.">
+          <div class="hero__wrapper-image">
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="img/hero-product-desktop.png 1x, img/hero-product-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/hero-product-tablet.png 1x, img/hero-product-tablet@2x.png 2x">
+              <img class="hero__image" src="img/hero-product.png" width="280" height="270"
+                srcset="img/hero-product@2x.png 2x" alt="Банка продукта.">
+            </picture>
+          </div>
           <a href="form.html" class="hero__button button">
             подобрать программу
           </a>
@@ -152,7 +168,11 @@
           </div>
         </div>
         <div class="example__slider">
-          <img class="example__slide" src="img/cat-slider.png" width="280" height="256" alt="Кот.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/cat-slider-tablet.png 1x, img/cat-slider-tablet@2x.png 2x">
+            <img class="example__slide" src="img/cat-slider.png" width="280" height="256"
+              srcset="img/cat-slider@2x.png 2x" alt="Кот.">
+          </picture>
         </div>
       </div>
     </section>
@@ -170,7 +190,12 @@
         <map name="cat" class="map__area">
           <area shape="circle" coords="0,0,0">
         </map>
-        <img class="map__image" width="320" height="362" usemap="#cat" src="img/map.jpg" alt="Карта.">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img class="map__image" src="img/map.jpg" srcset="img/map@2x.jpg" width="320" height="362" usemap="#cat"
+            alt="Карта.">
+        </picture>
       </div>
     </section>
   </main>
