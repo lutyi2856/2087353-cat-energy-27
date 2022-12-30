@@ -6,7 +6,7 @@
 
 
 .owner__group {
-  padding: 26px 20px 0 20px;
+  padding-top: 26px;
   .oswald();
   font-size: 16px;
   text-transform: uppercase;
@@ -17,7 +17,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 30px 67px 30px;
+    padding-bottom: 67px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -28,58 +30,17 @@
   margin: 0 0 35px 0;
   .oswald();
   font-weight: 400;
+  text-transform: none;
   font-size: 24px;
   line-height: 26px;
   color: @black;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: calc(100% + 20px);
-    width: 10000%;
-    height: 2px;
-    background-color: @green-button;
-    z-index: -1;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: calc(100% + 14px);
-    width: 10000%;
-    height: 2px;
-    background-color: @green-button;
-    z-index: -1;
-  }
 
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    width: 592px;
+    width: 514px;
     margin-bottom: 76px;
-
-    &::before {
-      right: calc(100% + 39px);
-    }
-
-
-    &::after {
-      left: calc(100% + 42px);
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    &::before {
-      right: calc(100% + 40px);
-    }
-
-
-    &::after {
-      left: calc(100% + 40px);
-    }
   }
 }
 
@@ -112,7 +73,7 @@
   position: relative;
   height: 45px;
   flex-grow: 1;
-  padding: 14px 0 14px 15px;
+  padding: 14px 40px 14px 15px;
   .oswald();
   font-size: 16px;
   text-transform: uppercase;
@@ -121,16 +82,39 @@
 
   &::placeholder {
     color: @dark-grey;
+    font-size: 16px;
+    line-height: 20px;
   }
 
-  @media (min-width: @desktop-width) {
-    flex-grow: 1;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      flex-grow: 1;
+    }
   }
 }
 
 .owner__field-title {
   margin-right: 10px;
   align-self: center;
+
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
 }
 
 .owner__field--letter {

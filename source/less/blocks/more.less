@@ -28,6 +28,7 @@
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   color: @information;
@@ -35,6 +36,8 @@
   @media (min-width: @tablet-width) {
     width: 134px;
     margin: 49px auto 0 auto;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   @media (min-width: @desktop-width) {
@@ -66,6 +69,12 @@
 .more__image {
   display: flex;
   margin: 0 auto 23px auto;
+
+  // @media (min-width: @tablet-width) {
+  //   width: 60px;
+  //   height: 60px;
+  //   object-fit: contain;
+  // }
 }
 
 .more__link {

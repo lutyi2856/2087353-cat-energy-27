@@ -22,13 +22,13 @@
   }
 
   @media (min-width: @tablet-width) {
-    background: linear-gradient(360deg, #f2f2f2 300px, #ffffff 0);
+    background: linear-gradient(360deg, #f2f2f2 430px, #ffffff 0);
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     align-items: flex-end;
-    background: linear-gradient(360deg, #f2f2f2 350px, #ffffff 0);
+    background: linear-gradient(360deg, #f2f2f2 431px, #ffffff 0);
   }
 }
 
@@ -58,11 +58,6 @@
   }
 }
 
-.product-list__value {
-  font-size: 12px;
-  line-height: 16px;
-  color: @dark-grey;
-}
 
 .product-list__title {
   grid-area: 1 / 2 / 2 / 3;
@@ -71,28 +66,24 @@
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
   color: @product-itle;
 
   @media (min-width: @tablet-width) {
     grid-area: auto;
     justify-self: center;
-    width: 130px;
+    width: 120px;
     margin: 0 0 21px 0;
     text-align: center;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 145px;
+    min-width: 145px;
     line-height: 21px;
     text-align: center;
+    font-size: 20px;
   }
-}
-
-.product-list__mark {
-  font-size: 12px;
-  line-height: 16px;
-  color: @dark-grey;
 }
 
 .product-list__item-wrapper {
@@ -133,18 +124,26 @@
   justify-content: space-between;
   width: 100%;
 
+  @media (min-width: @tablet-width) {
+    padding: 5px 0 9px 0;
+    border-bottom: 1px solid @other-border;
+  }
+
   @media (min-width: @desktop-width) {
     padding: 7px 0 9px 0;
-    border-bottom: 1px solid @other-border;
   }
 }
 
 .product-list__feature {
   grid-area: 2 / 2 / 3 / 3;
+  font-size: 12px;
+  line-height: 16px;
+  color: @dark-grey;
 
   @media (min-width: @tablet-width) {
     grid-area: auto;
     margin: 0 0 33px 0;
+    font-size: 16px;
   }
 
   @media (min-width: @desktop-width) {
@@ -155,6 +154,8 @@
 
 .product-list__link {
   grid-area: 3 / 1 / 4 / -1;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: @tablet-width) {
     grid-area: auto;

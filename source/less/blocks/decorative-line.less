@@ -1,0 +1,43 @@
+.decorative-line {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 20px);
+    width: 10000%;
+    height: 2px;
+    background-color: @green-button;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 22px);
+    width: 10000%;
+    height: 2px;
+    background-color: @green-button;
+    z-index: -1;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      right: calc(100% + 40px);
+    }
+
+    &::after {
+      left: calc(100% + 40px);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      right: calc(100% + 40px);
+    }
+
+    &::after {
+      left: calc(100% + 40px);
+    }
+  }
+}

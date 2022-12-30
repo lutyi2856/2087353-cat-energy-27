@@ -18,14 +18,18 @@
 }
 
 .other-product__title-wrapper {
-  padding: 25px 0 30px 0;
+  padding-top: 25px;
+  padding-bottom: 30px;
 
   @media (min-width: @tablet-width) {
-    padding: 68px 30px 0 30px;
+    padding-top: 68px;
+    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
     padding: 76px 30px 0 30px;
+    padding-top: 76px;
+    padding-bottom: 22px;
   }
 }
 
@@ -36,35 +40,15 @@
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   text-align: left;
   color: @black;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: calc(100% + 20px);
-    width: 10000%;
-    height: 2px;
-    background-color: @green-button;
-    z-index: -1;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: calc(100% + 21px);
-    width: 10000%;
-    height: 2px;
-    background-color: @green-button;
-    z-index: -1;
-  }
-
 
   @media (min-width: @tablet-width) {
     margin-bottom: 80px;
     padding-left: 36px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
 
@@ -121,6 +105,7 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  font-weight: 400;
   color: @product-itle;
 
   @media (min-width: @tablet-width) {
@@ -151,5 +136,25 @@
   @media (min-width: @desktop-width) {
     grid-column: 3 / -1;
     margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.other-product__mark {
+  line-height: 14px;
+  color: @dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.other-product__value {
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
   }
 }

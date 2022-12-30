@@ -4,6 +4,7 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-weight: 400;
@@ -11,6 +12,26 @@
     line-height: 24px;
   }
 }
+
+
+.main-nav__wrapper--open {
+  position: absolute;
+  background-color: @white;
+  right: -20px;
+  width: 320px;
+  top: 67px;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    width: max-content;
+  }
+}
+
+// .main-nav__wrapper-close {
+//   @media (min-width: @mobile-width-only) {
+//     display: none;
+//   }
+// }
 
 .main-nav__list {
   display: flex;

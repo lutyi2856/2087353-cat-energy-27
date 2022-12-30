@@ -17,14 +17,16 @@
 }
 
 .example__description-wrapper {
-  padding: 25px 20px 40px 20px;
+  padding-top: 25px;
+  padding-bottom: 40px;
 
   @media (min-width: @tablet-width) {
-    padding: 43px 30px 101px 30px;
+    padding-top: 43px;
+    padding-bottom: 101px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 30px 75px 30px;
+    padding-bottom: 75px;
     display: grid;
     grid-template-columns: 436px 560px;
     grid-template-rows: 206px 317px;
@@ -116,6 +118,7 @@
   width: 100%;
   .oswald();
   line-height: 20px;
+  font-style: normal;
   text-align: center;
   text-transform: uppercase;
   color: @black;
