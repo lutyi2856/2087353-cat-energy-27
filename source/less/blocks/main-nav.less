@@ -4,7 +4,6 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  position: relative;
 
   @media (min-width: @tablet-width) {
     font-weight: 400;
@@ -16,14 +15,18 @@
 
 .main-nav__wrapper--open {
   position: absolute;
-  background-color: @white;
-  right: -20px;
-  width: 320px;
+  background-color: #ffffff;
+  right: 50%;
+  transform: translateX(50%);
+  width: 100%;
   top: 67px;
 
   @media (min-width: @tablet-width) {
-    position: static;
+    position: relative;
     width: max-content;
+    top: 0;
+    background-color: #ffffff00;
+    z-index: 1;
   }
 }
 
@@ -46,7 +49,7 @@
 }
 
 .main-nav__item {
-  width: 320px;
+  width: 100%;
   border-top: 1px solid @nav-item-border;
 
   &:last-child {
