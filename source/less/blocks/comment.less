@@ -1,5 +1,10 @@
 .comment {
-  padding: 24px 20px 0 20px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.comment__wrapper {
+  padding-top: 24px;
 
   @media (min-width: @tablet-width) {
     padding: 0 67px 65px 70px;
@@ -25,20 +30,23 @@
 }
 
 .comment__field-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 37px;
   .oswald();
   font-size: 24px;
   line-height: 26px;
   color: @black;
 
+
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
-    display: block;
   }
 }
 
-/* Для десктопа */
+
 @media (min-width: @desktop-width) {
   .comment {
     padding: 0 30px 67px 30px;

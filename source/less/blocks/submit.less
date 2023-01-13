@@ -1,4 +1,6 @@
 .submit__description {
+  display: block;
+  margin-top: 21px;
   line-height: 16px;
   text-align: center;
   color: @black;
@@ -6,10 +8,37 @@
   @media (min-width: @tablet-width) {
     margin-left: 64px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 84px;
+  }
 }
 
 .submit {
+  padding: 0 0 32px 0;
+
   @media (min-width: @tablet-width) {
-    padding: 0 177px 72px 70px;
+    padding: 0 177px 72px 71px;
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 30px 82px 30px;
+  }
+}
+
+.submit__button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 282px;
+    min-height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
   }
 }
