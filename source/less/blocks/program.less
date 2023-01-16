@@ -1,12 +1,15 @@
 .program__wrapper {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 82px 30px 71px 30px;
+    padding-top: 82px;
+    padding-bottom: 71px;
   }
 }
 
@@ -59,7 +62,14 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    padding: 41px 61px 55px 52px;
+    padding: 77px 61px 55px 52px;
+
+    &::before {
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
   }
 }
 
@@ -85,6 +95,15 @@
       height: 194px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      top: 41px;
+      left: 67px;
+      width: 70px;
+      height: 97px;
+    }
+  }
 }
 
 .program__item--brawn-icon::after {
@@ -104,6 +123,13 @@
     width: 268px;
     height: 112px;
   }
+
+  @media (min-width: @desktop-width) {
+    top: 67px;
+    left: 33px;
+    width: 134px;
+    height: 56px;
+  }
 }
 
 .program__title {
@@ -112,6 +138,7 @@
   .oswald();
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
   text-transform: uppercase;
   color: @black;
 
@@ -120,6 +147,11 @@
     font-size: 36px;
     line-height: 36px;
     margin: 0 0 24px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 162px;
+    margin: 0 0 73px 0;
   }
 }
 
@@ -136,6 +168,10 @@
     line-height: 24px;
     color: @black;
     border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 23px;
   }
 }
 
@@ -157,5 +193,17 @@
     left: 98px;
     width: 24px;
     height: 12px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      top: -2px;
+      left: 133px;
+      width: 24px;
+      height: 10px;
+    }
   }
 }

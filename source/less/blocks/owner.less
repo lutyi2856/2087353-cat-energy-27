@@ -1,39 +1,46 @@
 .owner {
+  position: relative;
+  overflow-x: hidden;
+  padding: 26px 0 0 0;
+}
+
+
+.owner__group {
+  padding-top: 26px;
+  .oswald();
+  font-size: 16px;
+  text-transform: uppercase;
+  color: @dark-grey;
+
   @media (min-width: @tablet-width) {
     padding: 0 66px 65px 70px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 30px 67px 30px;
-  }
-}
-
-.owner__group {
-  padding: 26px 20px 0 20px;
-  .oswald();
-  font-size: 16px;
-  text-transform: uppercase;
-  color: @dark-grey;
-  border: none;
-
-  @media (min-width: @tablet-width) {
-    padding: 0;
+    padding-bottom: 67px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 .owner__group-title {
+  position: relative;
+  width: 227px;
+  display: inline-block;
+  margin: 0 0 35px 0;
   .oswald();
+  font-weight: 400;
+  text-transform: none;
   font-size: 24px;
   line-height: 26px;
   color: @black;
 
+
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    width: 100%;
+    width: 514px;
     margin-bottom: 76px;
-    padding: 0;
-    border: 0;
   }
 }
 
@@ -48,13 +55,78 @@
 }
 
 .owner__list-item {
+  display: flex;
+  align-content: center;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
+    margin-bottom: 0;
   }
 }
 
 .owner__field {
-  @media (min-width: @desktop-width) {
-    flex-grow: 1;
+  position: relative;
+  height: 45px;
+  flex-grow: 1;
+  padding: 14px 40px 14px 15px;
+  .oswald();
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid @other-border;
+
+
+  &::placeholder {
+    color: @dark-grey;
+    font-size: 16px;
+    line-height: 20px;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      flex-grow: 1;
+    }
+  }
+}
+
+.owner__field-title {
+  margin-right: 10px;
+  align-self: center;
+
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.owner__field--letter {
+  background-image: url("../../img/letter.svg");
+  background-position: top 12px right 15px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.owner__field--phone {
+  background-image: url("../../img/phone.svg");
+  background-position: top 11px right 15px;
+  background-repeat: no-repeat;
+  background-size: 20px;
 }

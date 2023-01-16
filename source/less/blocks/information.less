@@ -1,17 +1,19 @@
 .information {
-  padding: 26px 20px 26px 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
-    padding: 56px 70px;
+    padding-top: 56px;
+    padding-bottom: 56px;
     display: flex;
   }
 }
 
 .information__invite {
   .oswald();
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -19,6 +21,8 @@
 
   @media (min-width: @tablet-width) {
     width: 171px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -30,6 +34,7 @@
   @media (min-width: @tablet-width) {
     width: 160px;
     margin-left: auto;
+    font-size: 16px;
     text-align: right;
   }
 }

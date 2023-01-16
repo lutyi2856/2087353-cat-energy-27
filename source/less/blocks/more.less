@@ -1,19 +1,95 @@
+.more {
+  padding: 25px 0;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 52px 37.5px 38px 37.5px;
+    background: @white;
+    border: 2px solid @gray;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 47px;
+    padding: 51px 40px 40px 40px;
+  }
+}
+
+.more__item-wrapper {
+  @media (max-width: @mobile-width-only) {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
 .more__title {
+  display: block;
+  margin-bottom: 8px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   color: @information;
+
+  @media (min-width: @tablet-width) {
+    width: 134px;
+    margin: 49px auto 0 auto;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 140px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .more__description {
+  margin: 0 0 21px 0;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
   color: @dark-grey;
+
+  @media (min-width: @tablet-width) {
+    width: 165px;
+    display: flex;
+    margin: 23px auto 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .more__image {
+  display: flex;
+  margin: 0 auto 23px auto;
+
+  // @media (min-width: @tablet-width) {
+  //   width: 60px;
+  //   height: 60px;
+  //   object-fit: contain;
+  // }
+}
+
+.more__link {
+  padding: 10px 0;
+  text-decoration: none;
+  .oswald();
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @dark-grey;
+  background-color: @gray;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 87px;
+  }
 }
