@@ -26,21 +26,21 @@
               alt="Кэт энерджи.">
           </picture>
         </a>
-        <button class="main-header__toggle main-header__toggle--open main-header__toggle--close">
+        <button class="main-header__toggle main-header__toggle--open">
           <span class="visually-hidden">Открывает меню.</span>
         </button>
       </div>
       <nav class="main-header__main-nav main-nav">
-        <div class="main-nav__wrapper main-nav__wrapper--open main-nav__wrapper-close">
+        <div class="main-nav__wrapper main-nav__wrapper--open">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link main-nav__link--color" href="index.html">главная</a>
+              <a class="main-nav__link" href="index.html">главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--color" href="catalog.html">каталог продукции</a>
+              <a class="main-nav__link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--color" href="form.html">подбор программы</a>
+              <a class="main-nav__link" href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -96,18 +96,28 @@
                   </legend>
                   <ul class="form__radio-list">
                     <li class="form__radio-item">
-                      <input class="form__radio-field" type="radio" id="weight-loss" name="program"
-                        value="похудение" checked>
-                      <label class="form__radio-label" for="weight-loss">похудение</label>
+                      <label class="form__radio-label" for="weight-loss">
+                        <input class="form__radio-field visually-hidden" type="radio" id="weight-loss" name="program"
+                          value="похудение" checked>
+                        <span class="form__control-mark"></span>
+                        <span class="form__control-label">похудение</span>
+                      </label>
                     </li>
                     <li class="form__radio-item">
-                      <input class="form__radio-field" type="radio" id="mass-gain" name="program" value="Набор массы">
-                      <label class="form__radio-label" for="mass-gain">набор массы</label>
+                      <label class="form__radio-label" for="mass-gain">
+                        <input class="form__radio-field visually-hidden" type="radio" id="mass-gain" name="program"
+                          value="Набор массы">
+                        <span class="form__control-mark"></span>
+                        <span class="form__control-label">набор массы</span>
+                      </label>
                     </li>
                     <li class="form__radio-item">
-                      <input class="form__radio-field" type="radio" id="soviet" name="program"
-                        value="Не знаю (Нужен ваш совет)">
-                      <label class="form__radio-label" for="soviet">Не знаю (Нужен ваш совет)</label>
+                      <label class="form__radio-label" for="soviet">
+                        <input class="form__radio-field visually-hidden" type="radio" id="soviet" name="program"
+                          value="Не знаю (Нужен ваш совет)">
+                        <span class="form__control-mark"></span>
+                        <span class="form__control-label">Не знаю (Нужен ваш совет)</span>
+                      </label>
                     </li>
                   </ul>
                 </fieldset>
@@ -135,8 +145,8 @@
             <div class="comment">
               <div class="comment__wrapper container">
                 <label class="comment__field-title decorative-line" for="comment">Комментарий</label>
-                <textarea class="comment__field comment__field--placeholder" placeholder="Расскажите обо всех повадках кота." id="comment" name="comment" rows="5" >
-              </textarea>
+                <textarea class="comment__field comment__field--placeholder"
+                  placeholder="Расскажите обо всех повадках кота" id="comment" name="comment"></textarea>
               </div>
             </div>
             <div class="additionally">
@@ -146,20 +156,33 @@
                 </h3>
                 <ul class="additionally__list">
                   <li class="additionally__list-item">
-                    <input class="additionally__field" type="checkbox" id="sweetener" name="sweetener" checked>
-                    <label class="additionally__field-title" for="sweetener">сахарозаменитель</label>
+                    <label class="additionally__field-title" for="sweetener">
+                      <input class="additionally__field visually-hidden" type="checkbox" id="sweetener" name="sweetener"
+                        checked>
+                      <span class="additionally__control-mark"></span>
+                      <span class="additionally__control-label">сахарозаменитель</span>
+                    </label>
                   </li>
                   <li class="additionally__list-item">
-                    <input class="additionally__field" type="checkbox" id="water" name="water">
-                    <label class="additionally__field-title" for="water">питьевая вода</label>
+                    <label class="additionally__field-title" for="water">
+                      <input class="additionally__field visually-hidden" type="checkbox" id="water" name="water">
+                      <span class="additionally__control-mark"></span>
+                      <span class="additionally__control-label">питьевая вода</span>
+                    </label>
                   </li>
                   <li class="additionally__list-item">
-                    <input class="additionally__field" type="checkbox" id="milk" name="milk">
-                    <label class="additionally__field-title" for="milk">молоко</label>
+                    <label class="additionally__field-title" for="milk">
+                      <input class="additionally__field visually-hidden" type="checkbox" id="milk" name="milk">
+                      <span class="additionally__control-mark"></span>
+                      <span class="additionally__control-label">молоко</span>
+                    </label>
                   </li>
                   <li class="additionally__list-item">
-                    <input class="additionally__field" type="checkbox" id="vitamin" name="vitamin">
-                    <label class="additionally__field-title" for="vitamin">витамины</label>
+                    <label class="additionally__field-title" for="vitamin">
+                      <input class="additionally__field visually-hidden" type="checkbox" id="vitamin" name="vitamin">
+                      <span class="additionally__control-mark"></span>
+                      <span class="additionally__control-label">витамины</span>
+                    </label>
                   </li>
                 </ul>
               </div>
@@ -248,7 +271,7 @@
     </div>
   </footer>
 
-
+  <script src="scripts.js"></script>
 </body>
 
 </html>

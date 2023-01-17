@@ -155,3 +155,37 @@
     line-height: 30px;
   }
 }
+
+.form__radio-label {
+  position: relative;
+  min-height: 30px;
+  display: flex;
+  align-self: center;
+  padding-left: 46px;
+}
+
+.form__control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid @other-border;
+}
+
+.form__control-label {
+  align-self: center;
+}
+
+.form__radio-field[type="radio"]:checked + .form__control-mark::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 13px;
+  height: 13px;
+  background-color: @green-button;
+  border-radius: 50%;
+  content: "";
+}

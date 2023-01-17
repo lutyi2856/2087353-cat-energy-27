@@ -17,6 +17,7 @@
 
 .comment__field {
   width: 100%;
+  min-height: 150px;
   padding: 9px 0 0 15px;
   .oswald();
   font-size: 16px;
@@ -25,6 +26,7 @@
   color: @dark-grey;
 
   @media (min-width: @tablet-width) {
+    min-height: 174px;
     padding: 10px 0 0 19px;
   }
 }
@@ -53,3 +55,9 @@
   }
 }
 
+.comment__field--placeholder::placeholder {
+  font-family: @Oswald;
+  font-size: 16px;
+  line-height: 18px;
+  color: @dark-grey;
+}
