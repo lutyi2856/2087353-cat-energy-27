@@ -22,5 +22,12 @@
         </clipPath>
       </defs>
     </symbol>
+    <symbol width="24" height="18" id="hamburger" viewBox="0 0 24 18" fill="#000000">
+      <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24"/>
+    </symbol>
+    <symbol width="20" height="20" viewBox="0 0 20 20" fill="#000000" id="cross">
+      <path transform="scale(.97098 1.0282) rotate(-45 24.51 7.237)" stroke="#000" stroke-width="1.5" d="M0-.75h24.758"/>
+      <path transform="matrix(.68659 .72705 -.68659 .72705 1 2)" stroke="#000" stroke-width="1.5" d="M0-.75h24.758"/>
+    </symbol>
   </svg>
   

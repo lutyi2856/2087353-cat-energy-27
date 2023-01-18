@@ -2,18 +2,18 @@
 const buttonCatalog = document.querySelector('.main-header__toggle');
 
 // Находим меню, которое скрыто
-const navigationCategoryContainer = document.querySelector('.navigation-category-container');
+const navigationCategoryContainer = document.querySelector('.main-nav__wrapper');
 
 // Находим иконки плюс и минус внутри кнопки
-const buttonIconPlus = buttonCatalog.querySelector('.main-header__toggle--open');
-const buttonIconMinus = buttonCatalog.querySelector('..main-header__toggle--close');
+const buttonIconPlus = buttonCatalog.querySelector('.main-header__hamburger');
+const buttonIconMinus = buttonCatalog.querySelector('.main-header__cross');
 
 
 // Добавляем действие клика на кнопку
 buttonCatalog.addEventListener('click', () => {
 
   // При нажатии на кнопку переключаем класс visibility-container у найденных элементов
-  navigationCategoryContainer.classList.toggle('main-nav__wrapper-close');
-  buttonIconPlus.classList.toggle('visibility-container');
-  buttonIconMinus.classList.toggle('visibility-container');
+  navigationCategoryContainer.classList.toggle('visibility-none');
+  buttonIconPlus.classList.toggle('visibility-none');
+  buttonIconMinus.classList.toggle('visibility-none');
 });
