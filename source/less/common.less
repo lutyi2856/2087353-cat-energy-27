@@ -21,5 +21,7 @@ img {
 }
 
 .visibility-none {
-  display: none;
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
 }
