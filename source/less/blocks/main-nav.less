@@ -92,3 +92,32 @@
     color: @white;
   }
 }
+
+.main-nav__link--hover:hover {
+  opacity: 0.6;
+}
+
+.main-nav__link--active:active {
+  opacity: 0.3;
+}
+
+.main-nav__link--current-home {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @green-button;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-color: @white;
+  }
+}
+
+.main-nav__link--current {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @green-button;
+    padding: 10px 0 8px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 8px 0;
+  }
+}

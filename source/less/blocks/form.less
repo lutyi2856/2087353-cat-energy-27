@@ -94,7 +94,9 @@
   flex-grow: 1;
   min-height: 45px;
   padding-left: 20px;
-  border: 1px solid @other-border;
+  border: 1px solid @form-program-border;
+  .oswald();
+  font-size: 16px;
 
   &::placeholder {
     .oswald();
@@ -104,6 +106,8 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding-top: 7px;
+
     &::placeholder {
       font-size: 20px;
       line-height: 30px;
@@ -178,7 +182,7 @@
   align-self: center;
 }
 
-.form__radio-field[type="radio"]:checked + .form__control-mark::before {
+.form__radio-field[type="radio"]:checked+.form__control-mark::before {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -188,4 +192,24 @@
   background-color: @green-button;
   border-radius: 50%;
   content: "";
+}
+
+.form__field--hover:hover {
+  border-color: @other-border;
+}
+
+.form__field--focus:focus-visible {
+  outline: 2px solid @dark-grey;
+}
+
+.form__field--error:invalid {
+  outline: 2px solid #ff8282;
+}
+
+.form__radio-label--hover:hover .form__control-mark {
+  border-color: #bababa;
+}
+
+.form__radio-label--disabled:disabled {
+  opacity: 0.3;
 }
