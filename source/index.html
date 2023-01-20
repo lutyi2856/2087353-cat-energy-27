@@ -14,10 +14,10 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__container container--tablet container--desktop">
+    <div class="main-header__container main-header__container--tablet-desktop">
       <div class="main-header__logo-wrapper">
         <a href="index.html"
-          class="main-header__logo-link main-header__logo-link--hover main-header__logo-link--active">
+          class="main-header__logo-link">
           <picture>
             <source media="(min-width: 1280px)" srcset="img/logo-cat-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg">
@@ -25,7 +25,7 @@
           </picture>
         </a>
         <a href="index.html"
-          class="main-header__logo-title-link main-header__logo-title-link--hover main-header__logo-title-link--active">
+          class="main-header__logo-title-link">
           <picture>
             <source media="(min-width: 768px)" srcset="img/logo-title-tablet.svg">
             <img class="main-header__logo-image-title" src="img/logo-title.svg" width="101" height="18"
@@ -34,10 +34,12 @@
         </a>
         <button class="main-header__toggle">
           <span class="visually-hidden">Открывает меню.</span>
-          <svg class="main-header__cross visibility-none" width="20" height="20" role="img" aria-label="закрыть меню." aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+          <svg class="main-header__cross visibility-none" width="20" height="20" role="img" aria-label="закрыть меню."
+            aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
             <use href="img/sprite.svg#cross"></use>
           </svg>
-          <svg class="main-header__hamburger" width="24" height="18" aria-hidden="true" focusable="false" role="img" aria-label="открыть меню" xmlns="http://www.w3.org/2000/svg">
+          <svg class="main-header__hamburger" width="24" height="18" aria-hidden="true" focusable="false" role="img"
+            aria-label="открыть меню" xmlns="http://www.w3.org/2000/svg">
             <use href="img/sprite.svg#hamburger"></use>
           </svg>
         </button>
@@ -45,16 +47,16 @@
       <nav class="main-header__main-nav main-nav">
         <div class="main-nav__wrapper main-nav__wrapper--open visibility-none">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link main-nav__link--color main-nav__link--hover main-nav__link--active main-nav__link--current-home"
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--color  main-nav__link--current-home"
                 href="index.html">главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--color main-nav__link--hover main-nav__link--active"
+              <a class="main-nav__link main-nav__link--color"
                 href="catalog.html">каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--color main-nav__link--hover main-nav__link--active"
+              <a class="main-nav__link main-nav__link--color"
                 href="form.html">подбор программы</a>
             </li>
           </ul>
@@ -87,7 +89,7 @@
                 srcset="img/hero-product@2x.png 2x" alt="Банка продукта.">
             </picture>
           </div>
-          <a href="form.html" class="hero__button hero__button--active hero__button--hover button">
+          <a href="form.html" class="hero__button button">
             подобрать программу
           </a>
         </div>
@@ -104,7 +106,7 @@
               Slim
               поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a href="" class="program__button program__button--active">
+            <a href="" class="program__button">
               <span class="program__button-text">каталог slim</span>
             </a>
           </li>
@@ -115,7 +117,7 @@
               нарастить
               необходимые мышцы!
             </p>
-            <a href="" class="program__button program__button--active">
+            <a href="" class="program__button">
               <span class="program__button-text">каталог pro</span>
             </a>
           </li>
@@ -217,17 +219,18 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper container">
-      <a href="" class="footer__logo-link footer__logo-link--hover footer__logo-link--active">
-        <svg class="footer__logo-icon" width="129" height="24" aria-hidden="true" focusable="false" role="img" aria-label="логотип."
-          xmlns="http://www.w3.org/2000/svg">
+      <a href="" class="footer__logo-link">
+        <svg class="footer__logo-icon" width="129" height="24" aria-hidden="true" focusable="false" role="img"
+          aria-label="логотип." xmlns="http://www.w3.org/2000/svg">
           <use href="img/sprite.svg#footer-logo"></use>
         </svg>
       </a>
       <ul class="footer__social-list">
         <li class="footer__social-item">
           <a href="https://vk.com/htmlacademy"
-            class="footer__social-link footer__social-link--hover footer__social-link--active">
-            <svg class="footer__social-icon" width="27" height="17" aria-hidden="true" focusable="false" role="img" aria-label="в контакте."  xmlns="http://www.w3.org/2000/svg">
+            class="footer__social-link">
+            <svg class="footer__social-icon" width="27" height="17" aria-hidden="true" focusable="false" role="img"
+              aria-label="в контакте." xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#icon-vk"></use>
             </svg>
             <span class="visually-hidden">В контакте.</span>
@@ -235,8 +238,9 @@
         </li>
         <li class="footer__social-item">
           <a href="https://www.youtube.com/user/htmlacademyru"
-            class="footer__social-link footer__social-link--hover footer__social-link--active">
-            <svg class="footer__social-icon" aria-hidden="true" focusable="false" width="24" height="19" role="img" aria-label="ютуб." viewBox="0 0 24 19" xmlns="http://www.w3.org/2000/svg">
+            class="footer__social-link">
+            <svg class="footer__social-icon" aria-hidden="true" focusable="false" width="24" height="19" role="img"
+              aria-label="ютуб." viewBox="0 0 24 19" xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#icon-youtube"></use>
             </svg>
             <span class="visually-hidden">Ютуб.</span>
@@ -244,8 +248,9 @@
         </li>
         <li class="footer__social-item">
           <a href="https://t.me/htmlacademy"
-            class="footer__social-link footer__social-link--hover footer__social-link--active">
-            <svg class="footer__social-icon" aria-hidden="true" focusable="false" width="20" height="18" role="img" aria-label="телеграм." viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+            class="footer__social-link">
+            <svg class="footer__social-icon" aria-hidden="true" focusable="false" width="20" height="18" role="img"
+              aria-label="телеграм." viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#icon-telegram"></use>
             </svg>
             <span class="visually-hidden">Телеграмм.</span>
@@ -253,11 +258,12 @@
         </li>
       </ul>
       <a href="https://up.htmlacademy.ru"
-        class="footer__htmlacademy footer__htmlacademy--active footer__htmlacademy--hover">
+        class="footer__htmlacademy">
         <span class="footer__htmlacademy-text">
           HTML Academy
         </span>
-        <svg class="footer__htmlacademy-link" aria-hidden="true" focusable="false" width="27" height="34" role="img" aria-label="логотип html-академии." xmlns="http://www.w3.org/2000/svg">
+        <svg class="footer__htmlacademy-link" aria-hidden="true" focusable="false" width="27" height="34" role="img"
+          aria-label="логотип html-академии." xmlns="http://www.w3.org/2000/svg">
           <use href="img/sprite.svg#icon-academy"></use>
         </svg>
       </a>

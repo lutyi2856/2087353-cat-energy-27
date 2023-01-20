@@ -10,16 +10,16 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__container container--tablet container--desktop">
+    <div class="main-header__container main-header__container--tablet-desktop">
       <div class="main-header__logo-wrapper">
-        <a href="index.html" class="main-header__logo-link main-header__logo-link--hover main-header__logo-link--active">
+        <a href="index.html" class="main-header__logo-link">
           <picture>
             <source media="(min-width: 1280px)" srcset="img/logo-cat-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg">
             <img class="main-header__logo-image" src="img/logo-cat.svg" width="33" height="37" alt="Значек кота.">
           </picture>
         </a>
-        <a href="index.html" class="main-header__logo-title-link main-header__logo-title-link--hover main-header__logo-title-link--active">
+        <a href="index.html" class="main-header__logo-title-link">
           <picture>
             <source media="(min-width: 768px)" srcset="img/logo-title-tablet.svg">
             <img class="main-header__logo-image-title" src="img/logo-title.svg" width="101" height="18"
@@ -39,14 +39,14 @@
       <nav class="main-header__main-nav main-nav">
         <div class="main-nav__wrapper main-nav__wrapper--open visibility-none">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link main-nav__link--hover main-nav__link--active" href="index.html">главная</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--hover main-nav__link--active main-nav__link--current" href="catalog.html">каталог продукции</a>
+              <a class="main-nav__link main-nav__link--current" href="catalog.html">каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--hover main-nav__link--active" href="form.html">подбор программы</a>
+              <a class="main-nav__link" href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -66,7 +66,7 @@
         <h2 class="visually-hidden">
           Каталог.
         </h2>
-        <div class="catalog__wrapper container--tablet container--desktop">
+        <div class="catalog__wrapper catalog__container--tablet-desktop">
           <ul class="catalog__list product-list">
             <li class="product-list__item">
               <div class="product-list__item-wrapper">
@@ -107,7 +107,7 @@
                     </dd>
                   </div>
                 </dl>
-                <a href="" class="product-list__link button button--product product-list__link--hover product-list__link--active">
+                <a href="" class="product-list__link button button--product">
                   заказать
                 </a>
               </div>
@@ -153,7 +153,7 @@
                     </dd>
                   </div>
                 </dl>
-                <a href="" class="product-list__link button button--product product-list__link--hover product-list__link--active">
+                <a href="" class="product-list__link button button--product">
                   заказать
                 </a>
               </div>
@@ -197,7 +197,7 @@
                     </dd>
                   </div>
                 </dl>
-                <a href="" class="product-list__link button button--product product-list__link--hover product-list__link--active">
+                <a href="" class="product-list__link button button--product">
                   заказать
                 </a>
               </div>
@@ -243,7 +243,7 @@
                     </dd>
                   </div>
                 </dl>
-                <a href="" class="product-list__link button button--product product-list__link--hover product-list__link--active">
+                <a href="" class="product-list__link button button--product">
                   заказать
                 </a>
               </div>
@@ -287,7 +287,7 @@
                     </dd>
                   </div>
                 </dl>
-                <a href="" class="product-list__link button button--product product-list__link--hover product-list__link--active">
+                <a href="" class="product-list__link button button--product">
                   заказать
                 </a>
               </div>
@@ -333,7 +333,7 @@
                     </dd>
                   </div>
                 </dl>
-                <a href="" class="product-list__link button button--product product-list__link--hover product-list__link--active">
+                <a href="" class="product-list__link button button--product">
                   заказать
                 </a>
               </div>
@@ -377,7 +377,7 @@
                     </dd>
                   </div>
                 </dl>
-                <a href="" class="product-list__link product-list__link--hover product-list__link--active button button--product">
+                <a href="" class="product-list__link  button button--product">
                   заказать
                 </a>
               </div>
@@ -396,7 +396,7 @@
                 <p class="more__description">
                   На самом деле вкусов гораздо больше!
                 </p>
-                <a href="" class="more__link more__link--hover more__link--active">
+                <a href="" class="more__link">
                   показать все
                 </a>
               </div>
@@ -410,8 +410,8 @@
             Дополнительные товары
           </h2>
         </div>
-        <div class="other-product__wrapper container--desktop">
-          <div class="other-product__wrapper-list container--mobile container--tablet">
+        <div class="other-product__wrapper other-product__wrapper--container-desktop">
+          <div class="other-product__wrapper-list other-product__wrapper-list--container">
             <ul class="other-product__list">
               <li class="other-product__item">
                 <h3 class="other-product__item-title">
@@ -425,7 +425,7 @@
                     200 ₽
                   </dd>
                 </dl>
-                <a href="" class="other-product__link other-product__link--hover other-product__link--active button button--other">
+                <a href="" class="other-product__link button button--other">
                   заказать
                 </a>
               </li>
@@ -441,7 +441,7 @@
                     50 ₽
                   </dd>
                 </dl>
-                <a href="" class="other-product__link button button--other other-product__link--hover other-product__link--active">
+                <a href="" class="other-product__link button button--other">
                   заказать
                 </a>
               </li>
@@ -457,7 +457,7 @@
                     100 ₽
                   </dd>
                 </dl>
-                <a href="" class="other-product__link button button--other other-product__link--hover other-product__link--active">
+                <a href="" class="other-product__link button button--other">
                   заказать
                 </a>
               </li>
@@ -473,13 +473,13 @@
                     300 ₽
                   </dd>
                 </dl>
-                <a href="" class="other-product__link button button--other other-product__link--hover other-product__link--active">
+                <a href="" class="other-product__link button button--other">
                   заказать
                 </a>
               </li>
             </ul>
           </div>
-          <article class="action container--mobile container--tablet">
+          <article class="action action--container">
             <div class="action__wrapper">
               <h2 class="visually-hidden">Акция.</h2>
               <p class="action__description">
@@ -515,17 +515,18 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper container">
-      <a href="" class="footer__logo-link footer__logo-link--hover footer__logo-link--active">
-        <svg class="footer__logo-icon" width="129" height="24" aria-hidden="true" focusable="false" role="img" aria-label="логотип."
-          xmlns="http://www.w3.org/2000/svg">
+      <a href="" class="footer__logo-link">
+        <svg class="footer__logo-icon" width="129" height="24" aria-hidden="true" focusable="false" role="img"
+          aria-label="логотип." xmlns="http://www.w3.org/2000/svg">
           <use href="img/sprite.svg#footer-logo"></use>
         </svg>
       </a>
       <ul class="footer__social-list">
         <li class="footer__social-item">
           <a href="https://vk.com/htmlacademy"
-            class="footer__social-link footer__social-link--hover footer__social-link--active">
-            <svg class="footer__social-icon" width="27" height="17" aria-hidden="true" focusable="false" role="img" aria-label="в контакте."  xmlns="http://www.w3.org/2000/svg">
+            class="footer__social-link">
+            <svg class="footer__social-icon" width="27" height="17" aria-hidden="true" focusable="false" role="img"
+              aria-label="в контакте." xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#icon-vk"></use>
             </svg>
             <span class="visually-hidden">В контакте.</span>
@@ -533,8 +534,9 @@
         </li>
         <li class="footer__social-item">
           <a href="https://www.youtube.com/user/htmlacademyru"
-            class="footer__social-link footer__social-link--hover footer__social-link--active">
-            <svg class="footer__social-icon" aria-hidden="true" focusable="false" width="24" height="19" role="img" aria-label="ютуб." viewBox="0 0 24 19" xmlns="http://www.w3.org/2000/svg">
+            class="footer__social-link">
+            <svg class="footer__social-icon" aria-hidden="true" focusable="false" width="24" height="19" role="img"
+              aria-label="ютуб." viewBox="0 0 24 19" xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#icon-youtube"></use>
             </svg>
             <span class="visually-hidden">Ютуб.</span>
@@ -542,8 +544,9 @@
         </li>
         <li class="footer__social-item">
           <a href="https://t.me/htmlacademy"
-            class="footer__social-link footer__social-link--hover footer__social-link--active">
-            <svg class="footer__social-icon" aria-hidden="true" focusable="false" width="20" height="18" role="img" aria-label="телеграм." viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+            class="footer__social-link">
+            <svg class="footer__social-icon" aria-hidden="true" focusable="false" width="20" height="18" role="img"
+              aria-label="телеграм." viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#icon-telegram"></use>
             </svg>
             <span class="visually-hidden">Телеграмм.</span>
@@ -551,11 +554,12 @@
         </li>
       </ul>
       <a href="https://up.htmlacademy.ru"
-        class="footer__htmlacademy footer__htmlacademy--active footer__htmlacademy--hover">
+        class="footer__htmlacademy">
         <span class="footer__htmlacademy-text">
           HTML Academy
         </span>
-        <svg class="footer__htmlacademy-link" aria-hidden="true" focusable="false" width="27" height="34" role="img" aria-label="логотип html-академии." xmlns="http://www.w3.org/2000/svg">
+        <svg class="footer__htmlacademy-link" aria-hidden="true" focusable="false" width="27" height="34" role="img"
+          aria-label="логотип html-академии." xmlns="http://www.w3.org/2000/svg">
           <use href="img/sprite.svg#icon-academy"></use>
         </svg>
       </a>

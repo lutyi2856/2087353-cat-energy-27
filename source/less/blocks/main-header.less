@@ -90,18 +90,30 @@
   }
 }
 
-.main-header__logo-link--hover:hover {
+.main-header__logo-link:hover {
   opacity: 0.8;
 }
 
-.main-header__logo-link--active:active {
+.main-header__logo-link:active {
   opacity: 0.6;
 }
 
-.main-header__logo-title-link--hover:hover {
+.main-header__logo-title-link:hover {
   opacity: 0.8;
 }
 
-.main-header__logo-title-link--active:active {
+.main-header__logo-title-link:active {
   opacity: 0.6;
+}
+
+.main-header__container--tablet-desktop {
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    margin: 0 auto;
+  }
 }
