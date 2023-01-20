@@ -82,3 +82,35 @@
     margin-bottom: 0;
   }
 }
+
+.additionally__control-label {
+  align-self: center;
+}
+
+.additionally__field-title {
+  position: relative;
+  min-height: 30px;
+  display: flex;
+  padding-left: 46px;
+}
+
+.additionally__control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid @other-border;
+}
+
+.additionally__field[type="checkbox"]:checked + .additionally__control-mark::before,
+.additionally__field[type="checkbox"]:checked + .additionally__control-mark::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 14px;
+  content: "";
+  background-image: url("../../img/checked-icon.svg");
+}

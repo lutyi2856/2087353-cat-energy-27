@@ -10,38 +10,43 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__container container">
+    <div class="main-header__container container--tablet container--desktop">
       <div class="main-header__logo-wrapper">
-        <a href="#" class="main-header__logo-link">
+        <a href="index.html" class="main-header__logo-link main-header__logo-link--hover main-header__logo-link--active">
           <picture>
             <source media="(min-width: 1280px)" srcset="img/logo-cat-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg">
             <img class="main-header__logo-image" src="img/logo-cat.svg" width="33" height="37" alt="Значек кота.">
           </picture>
         </a>
-        <a href="" class="main-header__logo-title-link">
-          <img class="main-header__logo-image-title" src="img/logo-title.svg" width="101" height="18"
-            alt="Кэт энерджи.">
+        <a href="index.html" class="main-header__logo-title-link main-header__logo-title-link--hover main-header__logo-title-link--active">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo-title-tablet.svg">
+            <img class="main-header__logo-image-title" src="img/logo-title.svg" width="101" height="18"
+              alt="Кэт энерджи.">
+          </picture>
         </a>
         <button class="main-header__toggle">
           <span class="visually-hidden">Открывает меню.</span>
-          <svg class="main-header__toggle-icon" aria-hidden="true" focusable="false" fill="none" role="img"
-            aria-label="Гамбургер меню." width="24" height="16" viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg">
-            <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" />
+          <svg class="main-header__cross visibility-none" width="20" height="20" role="img" aria-label="закрыть меню." aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/sprite.svg#cross"></use>
+          </svg>
+          <svg class="main-header__hamburger" width="24" height="18" aria-hidden="true" focusable="false" role="img" aria-label="открыть меню" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/sprite.svg#hamburger"></use>
           </svg>
         </button>
       </div>
       <nav class="main-header__main-nav main-nav">
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper main-nav__wrapper--open visibility-none">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link" href="index.html">главная</a>
+              <a class="main-nav__link main-nav__link--hover main-nav__link--active" href="index.html">главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">каталог продукции</a>
+              <a class="main-nav__link main-nav__link--hover main-nav__link--active" href="catalog.html">каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">подбор программы</a>
+              <a class="main-nav__link main-nav__link--hover main-nav__link--active main-nav__link--current main-nav__link--current" href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -75,16 +80,16 @@
                   <ul class="form__group-list">
                     <li class="form__group-item">
                       <label class="form__field-label" for="name">ИМЯ:*</label>
-                      <input class="form__field" type="text" id="name" name="name" placeholder="барсик">
+                      <input class="form__field form__field--hover form__field--focus form__field--error" type="text" id="name" name="name" placeholder="барсик">
                     </li>
                     <li class="form__group-item">
                       <label class="form__field-label" for="heft">Вес (кг):*</label>
-                      <input class="form__field form__feld--heft" type="number" min="0.1" max="100" id="heft"
+                      <input class="form__field form__field--hover form__field--focus form__field--error" type="number" min="0.1" max="100" id="heft"
                         name="heft" placeholder="7">
                     </li>
                     <li class="form__group-item">
                       <label class="form__field-label" for="age">Возраст (лет):</label>
-                      <input class="form__field form__feld--age" type="number" min="1" max="20" id="age" name="age"
+                      <input class="form__field form__field--hover form__field--focus form__field--error" type="number" min="1" max="20" id="age" name="age"
                         placeholder="7">
                     </li>
                   </ul>
@@ -97,18 +102,28 @@
                   </legend>
                   <ul class="form__radio-list">
                     <li class="form__radio-item">
-                      <input class="form__radio-field" type="radio" id="weight-loss" name="weight-loss"
-                        value="похудение" checked>
-                      <label class="form__radio-label" for="weight-loss">похудение</label>
+                      <label class="form__radio-label form__radio-label--hover form__radio-label--disabled" for="weight-loss">
+                        <input class="form__radio-field visually-hidden" type="radio" id="weight-loss" name="program"
+                          value="похудение" checked>
+                        <span class="form__control-mark"></span>
+                        <span class="form__control-label">похудение</span>
+                      </label>
                     </li>
                     <li class="form__radio-item">
-                      <input class="form__radio-field" type="radio" id="mass-gain" name="mass-gain" value="Набор массы">
-                      <label class="form__radio-label" for="mass-gain">набор массы</label>
+                      <label class="form__radio-label form__radio-label--hover form__radio-label--disabled" for="mass-gain">
+                        <input class="form__radio-field visually-hidden" type="radio" id="mass-gain" name="program"
+                          value="Набор массы">
+                        <span class="form__control-mark"></span>
+                        <span class="form__control-label">набор массы</span>
+                      </label>
                     </li>
                     <li class="form__radio-item">
-                      <input class="form__radio-field" type="radio" id="soviet" name="soviet"
-                        value="Не знаю (Нужен ваш совет)">
-                      <label class="form__radio-label" for="soviet">Не знаю (Нужен ваш совет)</label>
+                      <label class="form__radio-label form__radio-label--hover form__radio-label--disabled" for="soviet">
+                        <input class="form__radio-field visually-hidden" type="radio" id="soviet" name="program"
+                          value="Не знаю (Нужен ваш совет)">
+                        <span class="form__control-mark"></span>
+                        <span class="form__control-label">Не знаю (Нужен ваш совет)</span>
+                      </label>
                     </li>
                   </ul>
                 </fieldset>
@@ -122,12 +137,12 @@
                 <ul class="owner__list">
                   <li class="owner__list-item">
                     <label class="owner__field-title" for="email">E-mail:*</label>
-                    <input class="owner__field owner__field--letter" type="email" id="email" name="email"
+                    <input class="owner__field owner__field--hover owner__field--focus owner__field--letter" type="email" id="email" name="email"
                       placeholder="kuklachev@gmail.com" required>
                   </li>
                   <li class="owner__list-item">
                     <label class="owner__field-title" for="telephon">Телефон:*</label>
-                    <input class="owner__field owner__field--phone" type="tel" id="telephon" name="telephon"
+                    <input class="owner__field owner__field--phone owner__field--phone-focus" type="tel" id="telephon" name="telephon"
                       placeholder="8 (960) 900-60-90" required>
                   </li>
                 </ul>
@@ -136,8 +151,8 @@
             <div class="comment">
               <div class="comment__wrapper container">
                 <label class="comment__field-title decorative-line" for="comment">Комментарий</label>
-                <textarea class="comment__field" id="comment" name="comment" rows="5">Расскажите обо всех повадках кота
-              </textarea>
+                <textarea class="comment__field comment__field--placeholder"
+                  placeholder="Расскажите обо всех повадках кота" id="comment" name="comment"></textarea>
               </div>
             </div>
             <div class="additionally">
@@ -147,26 +162,39 @@
                 </h3>
                 <ul class="additionally__list">
                   <li class="additionally__list-item">
-                    <input class="additionally__field" type="checkbox" id="sweetener" name="sweetener" checked>
-                    <label class="additionally__field-title" for="sweetener">сахарозаменитель</label>
+                    <label class="additionally__field-title" for="sweetener">
+                      <input class="additionally__field visually-hidden" type="checkbox" id="sweetener" name="sweetener"
+                        checked>
+                      <span class="additionally__control-mark"></span>
+                      <span class="additionally__control-label">сахарозаменитель</span>
+                    </label>
                   </li>
                   <li class="additionally__list-item">
-                    <input class="additionally__field" type="checkbox" id="water" name="water">
-                    <label class="additionally__field-title" for="water">питьевая вода</label>
+                    <label class="additionally__field-title" for="water">
+                      <input class="additionally__field visually-hidden" type="checkbox" id="water" name="water">
+                      <span class="additionally__control-mark"></span>
+                      <span class="additionally__control-label">питьевая вода</span>
+                    </label>
                   </li>
                   <li class="additionally__list-item">
-                    <input class="additionally__field" type="checkbox" id="milk" name="milk">
-                    <label class="additionally__field-title" for="milk">молоко</label>
+                    <label class="additionally__field-title" for="milk">
+                      <input class="additionally__field visually-hidden" type="checkbox" id="milk" name="milk">
+                      <span class="additionally__control-mark"></span>
+                      <span class="additionally__control-label">молоко</span>
+                    </label>
                   </li>
                   <li class="additionally__list-item">
-                    <input class="additionally__field" type="checkbox" id="vitamin" name="vitamin">
-                    <label class="additionally__field-title" for="vitamin">витамины</label>
+                    <label class="additionally__field-title" for="vitamin">
+                      <input class="additionally__field visually-hidden" type="checkbox" id="vitamin" name="vitamin">
+                      <span class="additionally__control-mark"></span>
+                      <span class="additionally__control-label">витамины</span>
+                    </label>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="submit container">
-              <button class="submit__button button" type="submit">
+              <button class="submit__button submit__button--hover submit__button--active button" type="submit">
                 отправить заявку
               </button>
               <span class="submit__description">
@@ -202,15 +230,17 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper container">
-      <a href="" class="footer__logo-link">
-        <img class="footer__logo-image" src="img/logo-footer.svg" alt="Кэт энерджи.">
+      <a href="" class="footer__logo-link footer__logo-link--hover footer__logo-link--active">
+        <svg class="footer__logo-icon" width="129" height="24" aria-hidden="true" focusable="false" role="img" aria-label="логотип."
+          xmlns="http://www.w3.org/2000/svg">
+          <use href="img/sprite.svg#footer-logo"></use>
+        </svg>
       </a>
       <ul class="footer__social-list">
         <li class="footer__social-item">
           <a href="https://vk.com/htmlacademy"
             class="footer__social-link footer__social-link--hover footer__social-link--active">
-            <svg class="footer__social-icon" width="27" height="17" aria-hidden="true" focusable="false"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="footer__social-icon" width="27" height="17" aria-hidden="true" focusable="false" role="img" aria-label="в контакте."  xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#icon-vk"></use>
             </svg>
             <span class="visually-hidden">В контакте.</span>
@@ -219,8 +249,7 @@
         <li class="footer__social-item">
           <a href="https://www.youtube.com/user/htmlacademyru"
             class="footer__social-link footer__social-link--hover footer__social-link--active">
-            <svg class="main-footer__social-icon" aria-hidden="true" focusable="false" width="24" height="19"
-              viewBox="0 0 24 19" xmlns="http://www.w3.org/2000/svg">
+            <svg class="footer__social-icon" aria-hidden="true" focusable="false" width="24" height="19" role="img" aria-label="ютуб." viewBox="0 0 24 19" xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#icon-youtube"></use>
             </svg>
             <span class="visually-hidden">Ютуб.</span>
@@ -229,27 +258,26 @@
         <li class="footer__social-item">
           <a href="https://t.me/htmlacademy"
             class="footer__social-link footer__social-link--hover footer__social-link--active">
-            <svg class="footer__social-icon" aria-hidden="true" focusable="false" width="20" height="18"
-              viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+            <svg class="footer__social-icon" aria-hidden="true" focusable="false" width="20" height="18" role="img" aria-label="телеграм." viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#icon-telegram"></use>
             </svg>
             <span class="visually-hidden">Телеграмм.</span>
           </a>
         </li>
       </ul>
-      <a href="https://up.htmlacademy.ru" class="footer__htmlacademy">
+      <a href="https://up.htmlacademy.ru"
+        class="footer__htmlacademy footer__htmlacademy--active footer__htmlacademy--hover">
         <span class="footer__htmlacademy-text">
           HTML Academy
         </span>
-        <svg class="footer__htmlacademy-link" aria-hidden="true" focusable="false" width="27" height="34"
-          xmlns="http://www.w3.org/2000/svg">
+        <svg class="footer__htmlacademy-link" aria-hidden="true" focusable="false" width="27" height="34" role="img" aria-label="логотип html-академии." xmlns="http://www.w3.org/2000/svg">
           <use href="img/sprite.svg#icon-academy"></use>
         </svg>
       </a>
     </div>
   </footer>
 
-
+  <script src="scripts.js"></script>
 </body>
 
 </html>

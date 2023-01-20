@@ -69,12 +69,6 @@
 .more__image {
   display: flex;
   margin: 0 auto 23px auto;
-
-  // @media (min-width: @tablet-width) {
-  //   width: 60px;
-  //   height: 60px;
-  //   object-fit: contain;
-  // }
 }
 
 .more__link {
@@ -92,4 +86,14 @@
   @media (min-width: @tablet-width) {
     margin-top: 87px;
   }
+}
+
+.more__link--hover:hover {
+  background-color: @product-border;
+  transition: 0.5s all;
+}
+
+.more__link--active:active {
+  color: #44444430;
+  transition: 0.5s all;
 }

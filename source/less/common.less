@@ -19,3 +19,19 @@ img {
   max-width: 100%;
   object-fit: contain;
 }
+
+.visibility-none {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
