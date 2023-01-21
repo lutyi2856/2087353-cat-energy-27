@@ -159,12 +159,31 @@
   }
 }
 
-.other-product__link--hover:hover {
+.other-product__link:hover {
   background-color: #5eaa2f;
   transition: 0.5s all;
 }
 
-.other-product__link--active:active {
+.other-product__link:active {
   color: #ffffff30;
   transition: 0.5s all;
+}
+
+.other-product__wrapper--container-desktop {
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    margin: 0 auto;
+  }
+}
+
+.other-product__wrapper-list--container {
+  @media (max-width: @mobile-width-only) {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @tablet-width_only) {
+    width: @tablet-width;
+    margin: 0 auto;
+  }
 }
