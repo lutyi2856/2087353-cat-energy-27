@@ -29,12 +29,12 @@
   }
 }
 
-.footer__logo-link:hover {
-  color: #3e3e3e;
+.footer__logo-link:hover .footer__logo-icon {
+  fill: #3e3e3e;
 }
 
-.footer__logo-link:active {
-  color: #6b6b6b;
+.footer__logo-link:active .footer__logo-icon {
+  fill: #6b6b6b;
 }
 
 .footer__logo-image {
@@ -107,13 +107,12 @@
   fill: currentColor;
 }
 
-.footer__htmlacademy-link > * {
-  fill: @icon;
-}
-
-
 .footer__htmlacademy:active {
   opacity: 0.3;
+}
+
+.footer__htmlacademy-link {
+  fill: @icon;
 }
 
 .footer__htmlacademy:hover .footer__htmlacademy-link {
@@ -123,6 +122,7 @@
 .footer__logo-icon {
   width: 128px;
   height: 24px;
+  fill: @information;
 
   @media (min-width: @tablet-width) {
     width: 142px;
