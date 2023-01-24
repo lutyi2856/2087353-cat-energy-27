@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(360deg, #ffffff 150px, @green 0), url("../../img/cat-background-hero.png");
+  background: linear-gradient(360deg, #ffffff 173px, @green 0), url("../../img/cat-background-hero.png");
   background-position: center, top;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -73,7 +73,7 @@
 }
 
 .hero__description {
-  margin-top: 25px;
+  margin: 25px 0 32px 0;
 
   @media (min-width: @tablet-width) {
     margin: 35px 0 49px 0;
@@ -113,15 +113,18 @@
 }
 
 .hero__button {
+  margin: 1px 0 0 0;
+  padding: 11px 0;
+
   @media (min-width: @tablet-width) {
-    margin-left: 91px;
+    margin: 0 0 0 91px;
     order: 3;
     z-index: 1;
     width: 244px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 76px;
+    margin: 0 0 0 76px;
   }
 }
 
