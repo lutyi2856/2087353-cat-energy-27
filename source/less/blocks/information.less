@@ -1,17 +1,18 @@
 .information {
-  padding-top: 26px;
+  padding-top: 20px;
   padding-bottom: 26px;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     padding-top: 56px;
-    padding-bottom: 56px;
+    padding-bottom: 62px;
     display: flex;
   }
 }
 
 .information__invite {
+  width: 139px;
   .oswald();
   font-weight: 400;
   font-size: 16px;
@@ -27,6 +28,7 @@
 }
 
 .information__address {
+  width: 139px;
   font-style: normal;
   line-height: 20px;
   color: @dark-grey;
@@ -40,5 +42,12 @@
 
   @media (min-width: @desktop-width) {
     text-align: left;
+  }
+}
+
+.information__town {
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-top: 18px;
   }
 }
