@@ -1,7 +1,6 @@
 .owner {
   position: relative;
   overflow-x: hidden;
-  padding: 26px 0 0 0;
 }
 
 
@@ -13,7 +12,7 @@
   color: @dark-grey;
 
   @media (min-width: @tablet-width) {
-    padding: 0 66px 65px 70px;
+    padding: 0 66px 66px 70px;
   }
 
   @media (min-width: @desktop-width) {
@@ -63,6 +62,10 @@
     margin-bottom: 0;
   }
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     margin-bottom: 0;
@@ -87,8 +90,10 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding: 14px 40px 14px 18px;
     font-size: 20px;
     line-height: 30px;
+    min-height: 52px;
 
     &::placeholder {
       font-size: 20px;
@@ -109,6 +114,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 22px;
 
     &::placeholder {
       font-size: 20px;
@@ -117,16 +123,9 @@
   }
 }
 
-.owner__field--letter {
-  background-image: url("../../img/letter.svg");
-  background-position: top 12px right 15px;
-  background-repeat: no-repeat;
-  background-size: 20px;
-}
-
 .owner__field--phone {
   background-image: url("../../img/phone.svg");
-  background-position: top 11px right 15px;
+  background-position: top 15px right 15px;
   background-repeat: no-repeat;
   background-size: 20px;
 }
@@ -157,14 +156,7 @@
 
 .owner__field--letter {
   background-image: url("../../img/letter.svg");
-  background-position: top 12px right 15px;
-  background-repeat: no-repeat;
-  background-size: 20px;
-}
-
-.owner__field--phone {
-  background-image: url("../../img/phone.svg");
-  background-position: top 11px right 15px;
+  background-position: top 14px right 15px;
   background-repeat: no-repeat;
   background-size: 20px;
 }

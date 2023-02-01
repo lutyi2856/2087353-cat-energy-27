@@ -2,7 +2,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 15px;
     right: calc(100% + 20px);
     width: 10000%;
     height: 2px;
@@ -13,7 +13,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 15px;
     left: calc(100% + 22px);
     width: 10000%;
     height: 2px;
@@ -24,10 +24,12 @@
   @media (min-width: @tablet-width) {
     &::before {
       right: calc(100% + 40px);
+      top: 22px;
     }
 
     &::after {
       left: calc(100% + 40px);
+      top: 22px;
     }
   }
 
@@ -38,6 +40,20 @@
 
     &::after {
       left: calc(100% + 40px);
+    }
+  }
+}
+
+.decorative-line--contact {
+  &::after {
+    top: 15px;
+    left: calc(100% - 26px);
+  }
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      left: calc(100% + 40px);
+      top: 22px;
     }
   }
 }
