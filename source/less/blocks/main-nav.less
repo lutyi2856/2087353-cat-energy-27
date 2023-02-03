@@ -46,6 +46,9 @@
   width: 100%;
   border-top: 1px solid @nav-item-border;
 
+  &:last-child {
+    border-bottom: 1px solid @nav-item-border;
+  }
 
   @media (min-width: @tablet-width) {
     width: max-content;
@@ -118,7 +121,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 10px 0 5px;
+    padding: 5px 0 3px;
   }
 }
 

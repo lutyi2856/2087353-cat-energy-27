@@ -30,19 +30,21 @@
               alt="Кэт энерджи.">
           </picture>
         </a>
-        <button class="main-header__toggle">
+        <!-- класс "visibility-none" скрывает кнопку которая работает на JS и переключает внешний вид кнопки-->
+        <button class="main-header__toggle visibility-none">
           <span class="visually-hidden">Открывает меню.</span>
-          <svg class="main-header__cross" width="20" height="20" role="img" aria-label="закрыть меню."
+          <svg class="main-header__cross visibility-none" width="20" height="20" role="img" aria-label="закрыть меню."
             aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
             <use href="img/sprite.svg#cross"></use>
           </svg>
-          <svg class="main-header__hamburger visibility-none" width="24" height="18" aria-hidden="true" focusable="false" role="img"
+          <svg class="main-header__hamburger" width="24" height="18" aria-hidden="true" focusable="false" role="img"
             aria-label="открыть меню" xmlns="http://www.w3.org/2000/svg">
             <use href="img/sprite.svg#hamburger"></use>
           </svg>
         </button>
       </div>
       <nav class="main-header__main-nav main-nav">
+        <!-- класс "visibility-none", "main-nav__wrapper--open"  переключают состояния меню-->
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current-home">

@@ -1,5 +1,6 @@
 // Находим кнопку, на которую будем нажимать
 const buttonCatalog = document.querySelector('.main-header__toggle');
+buttonCatalog.classList.remove('visibility-none');
 
 // Находим меню, которое скрыто
 const navigationCategoryContainer = document.querySelector('.main-nav__wrapper');
@@ -7,9 +8,7 @@ navigationCategoryContainer.classList.add('main-nav__wrapper--open', 'visibility
 
 // Находим иконки плюс и минус внутри кнопки
 const buttonIconPlus = buttonCatalog.querySelector('.main-header__hamburger');
-buttonIconPlus.classList.add('visibility-none');
 const buttonIconMinus = buttonCatalog.querySelector('.main-header__cross');
-buttonIconMinus.classList.remove('visibility-none');
 
 // Добавляем действие клика на кнопку
 buttonCatalog.addEventListener('click', () => {

@@ -26,7 +26,8 @@
               alt="Кэт энерджи.">
           </picture>
         </a>
-        <button class="main-header__toggle">
+        <!-- класс "visibility-none" скрывает кнопку которая работает на JS и переключает внешний вид кнопки-->
+        <button class="main-header__toggle visibility-none">
           <span class="visually-hidden">Открывает меню.</span>
           <svg class="main-header__cross visibility-none" width="20" height="20" role="img" aria-label="закрыть меню." aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
             <use href="img/sprite.svg#cross"></use>
@@ -37,7 +38,8 @@
         </button>
       </div>
       <nav class="main-header__main-nav main-nav">
-        <div class="main-nav__wrapper main-nav__wrapper--open visibility-none">
+        <!-- класс "visibility-none", "main-nav__wrapper--open"  переключают состояния меню-->
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">главная</a>
@@ -282,7 +284,7 @@
     </div>
   </footer>
 
-  <script src="js/scripts.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 
 </html>
