@@ -1,11 +1,14 @@
 .example {
+  padding-bottom: 260px;
   background-color: @background-gray;
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 516px;
     background: linear-gradient(540deg, @white 615px, @background-gray 0);
   }
 
   @media (min-width: @desktop-width) {
+    padding-bottom: 0;
     background: linear-gradient(540deg, @white 150px, @background-gray 0);
   }
 }

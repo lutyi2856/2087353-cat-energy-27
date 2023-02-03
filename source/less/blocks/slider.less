@@ -1,31 +1,112 @@
 .slider {
-  display: flex;
-  flex-direction: column;
-  width: 280px;
+  position: relative;
 }
 
-.slider__wrapper {
-  position: relative;
-  display: flex;
-  width: 100%;
+.slider__wrapper::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 108px;
+  transform: translate(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: @white;
+  border-radius: 50%;
+  z-index: 2;
+  border: 2px solid @icon;
+
+  @media (min-width: @tablet-width) {
+    top: 236px;
+  }
+}
+
+.slider__wrapper:hover::before {
+  border: 2px solid @green-button;
+}
+
+.slider__wrapper:hover::after {
+  background-color: @green-button;
+}
+
+.slider__wrapper:hover .slider__range-icon {
+  fill: @green-button;
+}
+
+.slider__wrapper:active::before {
+  border: 2px solid @range;
+}
+
+.slider__wrapper:active::after {
+  background-color: @range;
+}
+
+.slider__wrapper:active .slider__range-icon {
+  fill: @range;
+}
+
+.slider__wrapper::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 4px;
+  height: 256px;
+  background-color: @icon;
+  border-radius: 2px;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    height: 512px;
+  }
 }
 
 .slider__slide {
-  display: flex;
-  width: 280px;
-  object-fit: cover;
+  min-width: 280px;
+  overflow-x: hidden;
+
+  @media (min-width: @tablet-width) {
+    min-width: 560px;
+  }
 }
 
 .slider__box--after {
+  width: 140px;
+  overflow: hidden;
   position: absolute;
   right: 0;
-  width: 53%;
-  min-width: 0%;
-  max-width: 100%;
-  height: 100%;
-  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+
+  @media (min-width: @tablet-width) {
+    width: 280px;
+  }
 }
 
-.slider__slide--after {
-  background: linear-gradient(90deg,#fff0 40%,@background-gray 0);
+.slider__box--before {
+  width: 140px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 280px;
+  }
+}
+
+.slider__range-icon {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 119px;
+  fill: @icon;
+
+  @media (min-width: @tablet-width) {
+    top: 246px;
+  }
+}
+
+.slider__range-icon:hover .slider__wrapper {
+  background-color: @green-button;
 }
