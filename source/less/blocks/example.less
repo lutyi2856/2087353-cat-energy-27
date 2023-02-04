@@ -1,5 +1,5 @@
 .example {
-  padding-bottom: 260px;
+  padding-bottom: 263px;
   background-color: @background-gray;
 
   @media (min-width: @tablet-width) {
@@ -20,7 +20,7 @@
 }
 
 .example__description-wrapper {
-  padding-top: 25px;
+  padding-top: 27px;
   padding-bottom: 33px;
 
   @media (min-width: @tablet-width) {
@@ -116,6 +116,14 @@
   @media (min-width: @desktop-width) {
     &:last-child {
       margin: 0 0 0 42px;
+    }
+  }
+}
+
+.example__item--image-tablet {
+  @media (min-width: @tablet-width) {
+    &::after {
+      background-image: url("../../img/weight-back-tablet.png");
     }
   }
 }
